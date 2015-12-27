@@ -1,0 +1,17 @@
+.react-d3-histogram {
+  display: flex;
+}
+.react-d3-histogram__bar rect {
+  fill: steelblue;
+  shape-rendering: crispEdges;
+}
+.react-d3-histogram__bar text {
+  fill: #fff;
+  z-index: -100;
+}
+.react-d3-histogram__x-axis path,
+.react-d3-histogram__x-axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}

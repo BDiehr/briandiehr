@@ -1,0 +1,12 @@
+.post-overview {
+  &__title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  &__container {
+    display: block;
+    background: #2c3e50;
+    color: white;
+    padding: 1em;
+  }
+}

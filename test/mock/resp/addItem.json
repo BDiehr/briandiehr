@@ -1,0 +1,16 @@
+{
+  "status": 200,
+  "msg": "Successfully ran add item request",
+  "clientMsg": "Added item",
+  "item": {
+    "id": "123-asdfasf-324-mock",
+    "price": 100,
+    "quantity": 1,
+    "numOfDays": 7,
+    "description": "Description of an item",
+    "markets": [
+      "eBay"
+    ]
+  },
+  "markets": ["eBay"]
+}
