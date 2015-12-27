@@ -10,7 +10,7 @@ const routes = (
       <IndexRoute component={require('./pages/home')} />
       <Route path="hacker-news-vs-reddit" component={require('./pages/hackerNewsVsReddit')} />
       <Route path="about" component={require('./pages/about')} />
-      <Route path="contribute" component={require('./pages/contribute')} />
+      <Route path="code" component={require('./pages/code')} />
       <Route path="*" component={require('./pages/notfound')} />
     </Route>
   </Router>

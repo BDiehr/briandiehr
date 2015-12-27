@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 /** styles */
-require('styles/layout.scss');
+require('./layout.scss');
 
 const propTypes = {
   children: PropTypes.any,
@@ -19,7 +19,7 @@ class Layout extends Component {
             </Navbar.Header>
             <Nav>
               <NavItem href="#/about">About</NavItem>
-              <NavItem href="#/contribute">Contribute</NavItem>
+              <NavItem href="#/code">Code</NavItem>
             </Nav>
           </Navbar>
           <div>
@@ -27,9 +27,11 @@ class Layout extends Component {
           </div>
           <div className="footer">
             <hr />
-            <div className="footer__title">Brian Diehr | Dev & Statistics</div>
+            <div className="footer__title">Dev &amp; Statistics | Brian Diehr</div>
             <a title="GitHub" className="social-icon" href="https://github.com/BDiehr"><i className="fa fa-3x fa-github"/></a>
-            <a title="LinkedIn" className="social-icon" href="https://www.linkedin.com/in/brian-diehr-6873b5b9"><i className="fa fa-3x fa-linkedin-square"/></a>
+            <a title="LinkedIn" className="social-icon" href="https://www.linkedin.com/in/brian-diehr-6873b5b9">
+              <i className="fa fa-3x fa-linkedin-square"/>
+            </a>
           </div>
         </div>
     );
