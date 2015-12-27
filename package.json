@@ -1,5 +1,5 @@
 {
-  "name": "e360-ecommerce-client",
+  "name": "briandiehr.com",
   "version": "1.0.0",
   "scripts": {
     "build": "NODE_ENV=production webpack --config webpack.production.config.js",
