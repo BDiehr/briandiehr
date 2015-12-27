@@ -3,7 +3,7 @@ const APIConstants = {
     SERVER_CONSTANT: 'http://localhost:3332',
   },
   production: {
-    SERVER_CONSTANT: 'http://ec2-52-24-249-140.us-west-2.compute.amazonaws.com:3332',
+    SERVER_CONSTANT: 'http://162.243.240.28:3332',
   },
 };
 
