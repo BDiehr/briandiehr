@@ -64,7 +64,7 @@ function scrapForTopPostsClosure(app) {
     try {
       debug('dev')('Running analyzeTopPosts service');
       const knex = app.knex;
-      const numberOfPosts = 25;
+      const numberOfPosts = 50;
       /** Fetch HackerNews data */
       const topIdsHackerNews = (yield getTopStoriesHackerNews()).slice(0, numberOfPosts);
       const hackerNewsPosts = (yield topIdsHackerNews.map(itemId => getHackerNewsPost(itemId))).filter(post => post.url !== undefined);
@@ -74,26 +74,34 @@ function scrapForTopPostsClosure(app) {
       const redditUrls = redditPosts.map(post => post.url);
       /** Find Intersection of posts */
       const sharedUrls = redditUrls.filter(redditUrl => hackerNewsUrls.some(hackerNewsUrl => areURLsEqual(hackerNewsUrl, redditUrl)));
-      const sharedPostsData = sharedUrls.map(sharedUrl => {
-        return {
-          url: sharedUrl,
-          hackerNewsPost: parseHackerNewsPost(hackerNewsPosts.find(post => areURLsEqual(post.url, sharedUrl))),
-          redditPost: parseRedditPost(redditPosts.find(post => areURLsEqual(post.url, sharedUrl))),
-        };
-      });
 
-      /** Analyze the data */
-      const analyzedPosts = sharedPostsData.map(analyzePostData);
-      /** Add to database */
-      yield knex('topPosts').insert(analyzedPosts);
-      debug('dev')('Inserted new posts');
-      const topPosts = yield knex('topPosts').select('*');
-      debug('dev')('New Posts inserted in database');
+      if(sharedUrls.length > 0) {
+        const sharedPostsData = sharedUrls.map(sharedUrl => {
+          return {
+            url: sharedUrl,
+            hackerNewsPost: parseHackerNewsPost(hackerNewsPosts.find(post => areURLsEqual(post.url, sharedUrl))),
+            redditPost: parseRedditPost(redditPosts.find(post => areURLsEqual(post.url, sharedUrl))),
+          };
+        });
 
-      fs.writeFile(path.resolve(__dirname, '..', 'static/hackernews_vs_reddit/post'), JSON.stringify({topPosts, status: 200}), (err) => {
-        if(err) debug('dev')({err});
-        else debug('dev')(`Analyzed ${analyzedPosts.length} new posts.`);
-      });
+        /** Analyze the data */
+        const analyzedPosts = sharedPostsData.map(analyzePostData);
+        /** Add to database */
+        yield knex('topPosts').insert(analyzedPosts);
+        debug('dev')('Inserted new posts');
+        const topPosts = yield knex('topPosts').select('*');
+        debug('dev')('New Posts inserted in database');
+
+        fs.writeFile(path.resolve(__dirname, '..', 'static/hackernews_vs_reddit/post'), JSON.stringify({
+          topPosts,
+          status: 200
+        }), (err) => {
+          if (err) debug('dev')({err});
+          else debug('dev')(`Analyzed ${analyzedPosts.length} new posts.`);
+        });
+      } else {
+        debug('dev')('No intersection URLs found.');
+      }
     } catch (err) {
       debug('dev')({err});
     }
