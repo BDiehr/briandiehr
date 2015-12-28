@@ -1,9 +1,9 @@
-import connectToStores from 'alt/utils/connectToStores';
+import connectToStores from '../../../../node_modules/alt/utils/connectToStores';
 import _ from 'lodash';
 import uuid from 'node-uuid';
 import React, {Component, PropTypes} from 'react';
 import { Grid } from 'react-bootstrap';
-import PostStore from 'stores/PostStore';
+import PostStore from '../../../stores/PostStore';
 import SummarizePosts from './summarizePosts';
 import PostOverview from './postOverview';
 import Histogram from './histogram';
@@ -60,8 +60,11 @@ class Home extends Component {
               </p>
             </small>
             <PostOverview posts={topPosts} />
+            <hr/>
             <Histogram data={topPosts.map(post => Math.floor(post.secondsDifference / 60))} />
-            <h2>Detailed Summary</h2>
+            <h3 className="text-center"> Freq. of time difference in minutes</h3>
+            <hr/>
+            <h2>Daily Win Log</h2>
             {groupedByDay.map(posts => <SummarizePosts key={uuid.v4()} posts={posts} />)}
           </Grid>
         </div>

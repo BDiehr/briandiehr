@@ -1,9 +1,0 @@
-{
-  "status": 200,
-  "msg": "Successfully ran removal item request",
-  "clientMsg": "Removed item",
-  "item": {
-    "id": "123-asdfasf-324-mock"
-  },
-  "markets": ["eBay"]
-}

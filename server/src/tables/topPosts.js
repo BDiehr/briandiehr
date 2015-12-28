@@ -5,7 +5,7 @@ function initTable(knex) {
     .createTableIfNotExists('topPosts', (table) => {
       debug('dev')('Creating Top Posts Table');
       table.increments('topPostId');
-      table.string('url').unique();
+      table.string('url');
       table.enum('winner', ['HACKER_NEWS', 'REDDIT', 'TIE']);
       table.string('title');
       table.integer('secondsDifference');

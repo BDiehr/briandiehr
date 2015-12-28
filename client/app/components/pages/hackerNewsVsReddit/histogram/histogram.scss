@@ -1,0 +1,23 @@
+.react-d3-histogram {
+  display: flex;
+
+  svg {
+    margin: 0 auto;
+  }
+
+  &__bar rect {
+    fill: steelblue;
+    shape-rendering: crispEdges;
+  }
+
+  &__bar text {
+    fill: #fff;
+    z-index: -100;
+  }
+
+  &__x-axis path, &__x-axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+}

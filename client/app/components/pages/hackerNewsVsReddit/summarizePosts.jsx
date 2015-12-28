@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import DetailPost from './detailPost';
 import uuid from 'node-uuid';
-import 'styles/summarizePosts.scss';
+import '../../../styles/summarizePosts.scss';
 
 const propTypes = {
   posts: PropTypes.arrayOf(PropTypes.shape({

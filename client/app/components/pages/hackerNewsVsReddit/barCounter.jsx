@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import 'styles/barCounter.scss';
+import '../../../styles/barCounter.scss';
 
 const propTypes = {
   redditCount: PropTypes.number.isRequired,

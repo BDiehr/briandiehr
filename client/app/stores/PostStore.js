@@ -1,5 +1,5 @@
 import alt from '../util/alt';
-import { datasource } from 'alt/utils/decorators';
+import { datasource } from '../../node_modules/alt/utils/decorators';
 import PostSource from '../sources/PostSource';
 import PostActions from '../actions/PostActions';
 

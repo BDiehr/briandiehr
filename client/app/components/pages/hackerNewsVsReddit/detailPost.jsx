@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import 'styles/detailPost.scss';
+import '../../../styles/detailPost.scss';
 const propTypes = {
   post: PropTypes.shape({
     winner: PropTypes.oneOf(['TIE', 'HACKER_NEWS', 'REDDIT']).isRequired,

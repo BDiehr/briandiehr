@@ -1,13 +1,10 @@
 const Router = require('koa-router');
-const hackerNewsVsRedditController = require('../controllers/hackernews_vs_reddit');
+const publicController = require('../controllers/public');
 
 function routeConfig(app) {
-  /** Routers */
-  const hackerNewsVsReddit = new Router();
-
-  /** Public routes */
-  hackerNewsVsReddit.get('/hackernews_vs_reddit/post', hackerNewsVsRedditController.getTopPosts);
-  app.use(hackerNewsVsReddit.routes());
+  const publicRouter = new Router();
+  publicRouter.get('/status', publicController.status);
+  app.use(publicRouter.routes());
 }
 
 export default routeConfig;

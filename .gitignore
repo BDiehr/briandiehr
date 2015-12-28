@@ -1,5 +1,11 @@
-node_modules
-npm-debug.log
+client/npm-debug.log
+client/node_modules
+client/dist/**
+server/npm-debug.log
+server/node_modules
+server/dist/**
+server/src/static/**/*
+server/mydb.sqlite
 .idea
 */**/.idea
-dist/**
+

@@ -14,7 +14,7 @@ class Layout extends Component {
           <Navbar>
             <Navbar.Header>
               <Navbar.Brand>
-                <a href="#">Dev & Statistics</a>
+                <a href="#">Dev &amp; Statistics</a>
               </Navbar.Brand>
             </Navbar.Header>
             <Nav>
