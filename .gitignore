@@ -4,7 +4,7 @@ client/dist/**
 server/npm-debug.log
 server/node_modules
 server/dist/**
-server/src/static/**/*
+server/src/static/hackernews_vs_reddit/*
 server/mydb.sqlite
 .idea
 */**/.idea
