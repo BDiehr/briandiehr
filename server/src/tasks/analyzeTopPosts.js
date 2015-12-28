@@ -64,8 +64,8 @@ function scrapForTopPostsClosure(app) {
     try {
       debug('dev')('Running analyzeTopPosts service');
       const knex = app.knex;
-      const numberOfPosts = 100;
-      /** Fetch first 100 HackerNews Posts */
+      const numberOfPosts = 25;
+      /** Fetch HackerNews data */
       const topIdsHackerNews = (yield getTopStoriesHackerNews()).slice(0, numberOfPosts);
       const hackerNewsPosts = (yield topIdsHackerNews.map(itemId => getHackerNewsPost(itemId))).filter(post => post.url !== undefined);
       const hackerNewsUrls = hackerNewsPosts.map(post => post.url);
