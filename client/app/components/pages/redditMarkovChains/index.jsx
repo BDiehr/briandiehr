@@ -107,11 +107,6 @@ class Home extends Component {
               I utilize the reddit API to grab the top 100 posts titles to create the string which gets fed into the Markov Chain. This appears to be enough data to create some
               interesting results, but a small enough sample size to allow many of the titles to retain their original context.
             </p>
-            <h3>Reddit API</h3>
-            <p>
-              I utilize the reddit API to grab the top 100 posts titles to create the string which gets fed into the Markov Chain. This appears to be enough data to create some
-              interesting results, but a small enough sample size to allow many of the titles to retain their original context.
-            </p>
             <h3>Contribute!</h3>
             <p>
               <a href="https://github.com/bdiehr/briandiehr" target="_blank" title="GitHub">All code is available here</a> and will gladly accept pull requests!
