@@ -39,14 +39,6 @@ function redditMarkovChainClosure(subreddit) {
       };
     });
 
-    // const weirdRedditPostsPath = path.resolve(__dirname, '..', `static/reddit_markov_chain/${lowerCaseSubreddit}`);
-    // yield new Promise((resolve, reject) => {
-    //   fs.writeFile(weirdRedditPostsPath, JSON.stringify(weirdRedditPosts), (err, success) => {
-    //     if (err) reject(err);
-    //     else resolve(success);
-    //   });
-    // });
-
     return weirdRedditPosts;
   });
 }
