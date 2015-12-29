@@ -87,7 +87,6 @@ class Home extends Component {
             <br />
             <hr />
             <br />
-            <h2>UNDER CONSTRUCTION</h2>
             <h2>What Am I looking at here?</h2>
             <p>
               You are looking at <a href="https://en.wikipedia.org/wiki/Markov_chain" target="_blank" title="Markov Chains">Markov Chains</a>!
@@ -100,7 +99,22 @@ class Home extends Component {
             <p>
               To get interesting results you need to scrape many post titles. To make the results specific to a subreddit, I maintain many different seed files, as well as
               keep the top posts up to date with the respective subreddits. <em>There are a lot of subreddits</em>, and around 10,000 active subreddits. This is way more subreddits than my
-              measly <a href="https://www.digitalocean.com/" target="_blank" title="DigitcalOcean">Digital Ocean</a> droplet could ever handle with out some aggressive caching.
+              measly <a href="https://www.digitalocean.com/" target="_blank" title="DigitcalOcean">Digital Ocean</a> droplet could ever handle with out some aggressive caching. I am
+              currently using <code>LRU-Caching</code>, with a max-age of 30 minutes.
+            </p>
+            <h3>Reddit API</h3>
+            <p>
+              I utilize the reddit API to grab the top 100 posts titles to create the string which gets fed into the Markov Chain. This appears to be enough data to create some
+              interesting results, but a small enough sample size to allow many of the titles to retain their original context.
+            </p>
+            <h3>Reddit API</h3>
+            <p>
+              I utilize the reddit API to grab the top 100 posts titles to create the string which gets fed into the Markov Chain. This appears to be enough data to create some
+              interesting results, but a small enough sample size to allow many of the titles to retain their original context.
+            </p>
+            <h3>Contribute!</h3>
+            <p>
+              <a href="https://github.com/bdiehr/briandiehr" target="_blank" title="GitHub">All code is available here</a> and will gladly accept pull requests!
             </p>
           </Grid>
         </div>
