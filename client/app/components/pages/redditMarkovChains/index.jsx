@@ -89,6 +89,22 @@ class Home extends Component {
                   url={post.url}
                 />
               ))}
+
+            <hr />
+            <h2>What Am I looking at here?</h2>
+            <p>
+              You are looking at <a href="https://en.wikipedia.org/wiki/Markov_chain" target="_blank" title="Markov Chains">Markov Chains</a>!
+              I have created scripts which analyze several thousand reddit posts for each subreddit requested, to create a seed file which is fed into the Markov Chain.
+              Once the seed file is place into the Markov Chain, I grab the top 25 posts on the selected subreddit. For each title, I input the first word of the title into the Markov Chain
+              which then generates the rest of the title.
+            </p>
+            <h2>How It's Made</h2>
+            <h3>Caching</h3>
+            <p>
+              To get interesting results you need to scrape many post titles. To make the results specific to a subreddit, I maintain many different seed files, as well as
+              keep the top posts up to date with the respective subreddits. <em>There are a lot of subreddits</em>, and around 10,000 active subreddits. This is way more subreddits than my measily,
+              <a href="https://www.digitalocean.com/" target="_blank" title="DigitcalOcean">Digital Ocean</a> droplet could ever handle with out some aggressive caching.
+            </p>
           </Grid>
         </div>
       </div>
