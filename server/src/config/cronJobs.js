@@ -12,8 +12,6 @@ function cronJobConfig(app) {
     timezone: 'UTC',
   });
   task.start();
-
-  redditMarkovChain(app).call();
 }
 
 export default cronJobConfig;

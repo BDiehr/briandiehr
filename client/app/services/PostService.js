@@ -16,14 +16,14 @@ class PostService {
     });
   }
 
-  getRedditMarkovPosts() {
+  getRedditMarkovPosts(subreddit) {
     return new Promise((resolve, reject) => {
-      request.get(`${SERVER_CONSTANT}/reddit_markov_chain/hot`)
+      request.get(`${SERVER_CONSTANT}/reddit_markov_chain/${subreddit}`)
         .accept('text')
+        .accept('json')
         .then(resp => {
-          console.log(JSON.parse(resp.text));
           if (resp.status !== 200) reject(resp);
-          else resolve(JSON.parse(resp.text));
+          else resolve(resp.body || JSON.parse(resp.text));
         })
         .catch(err => {
           reject(err);

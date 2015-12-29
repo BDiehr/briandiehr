@@ -75,7 +75,7 @@ function scrapForTopPostsClosure(app) {
       /** Find Intersection of posts */
       const sharedUrls = redditUrls.filter(redditUrl => hackerNewsUrls.some(hackerNewsUrl => areURLsEqual(hackerNewsUrl, redditUrl)));
 
-      if(sharedUrls.length > 0) {
+      if (sharedUrls.length > 0) {
         const sharedPostsData = sharedUrls.map(sharedUrl => {
           return {
             url: sharedUrl,
@@ -94,7 +94,7 @@ function scrapForTopPostsClosure(app) {
 
         fs.writeFile(path.resolve(__dirname, '..', 'static/hackernews_vs_reddit/post'), JSON.stringify({
           topPosts,
-          status: 200
+          status: 200,
         }), (err) => {
           if (err) debug('dev')({err});
           else debug('dev')(`Analyzed ${analyzedPosts.length} new posts.`);

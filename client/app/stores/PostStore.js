@@ -18,8 +18,10 @@ class PostStore {
     });
 
     this.state = {
+      /** HackerNews vs. Reddit */
       topPosts: [],
       postsLoadingStatus: 'IDLE',
+      /** Reddit Markov Chain */
       redditMarkovPosts: [],
       redditMarkovPostsLoadingStatus: 'IDLE',
     };

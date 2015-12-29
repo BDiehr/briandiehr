@@ -6,7 +6,8 @@ server/npm-debug.log
 server/node_modules
 server/dist/**
 server/src/static/hackernews_vs_reddit/post
-server/src/static/reddit_markov_chain/top
+server/src/static/reddit_markov_chain/*
+!server/src/static/reddit_markov_chain/.gitkeep
 server/mydb.sqlite
 server/.idea
 .idea

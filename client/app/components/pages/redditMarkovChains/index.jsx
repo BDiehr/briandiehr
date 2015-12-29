@@ -1,7 +1,7 @@
-import connectToStores from '../../../../node_modules/alt/utils/connectToStores';
+import connectToStores from 'alt/utils/connectToStores';
 import React, {Component, PropTypes} from 'react';
 import { Grid, Input, Button, Col, Row } from 'react-bootstrap';
-import Post from './post';
+import Posts from './posts';
 import PostStore from '../../../stores/PostStore';
 require('styles/home.scss');
 
@@ -11,6 +11,7 @@ const propTypes = {
     score: PropTypes.number.isRequired,
     url: PropTypes.string.isRequired,
   })),
+  redditMarkovPostsLoadingStatus: PropTypes.string.isRequired,
   location: PropTypes.any.isRequired,
   history: PropTypes.any.isRequired,
 };
@@ -33,6 +34,7 @@ class Home extends Component {
     const storeState = PostStore.getState();
     return {
       redditMarkovPosts: storeState.redditMarkovPosts,
+      redditMarkovPostsLoadingStatus: storeState.redditMarkovPostsLoadingStatus,
     };
   }
 
@@ -41,10 +43,12 @@ class Home extends Component {
     const subreddit = this.refs.subreddit.getValue();
     this.props.history.push(`/reddit-markov-chains?subreddit=${encodeURIComponent(subreddit)}`);
     this.setState({ subreddit });
+    PostStore.getRedditMarkovPosts(subreddit);
   }
 
   render() {
     const posts = this.props.redditMarkovPosts;
+    const loadingStatus = this.props.redditMarkovPostsLoadingStatus;
     const { subreddit } = this.state;
 
     return (
@@ -79,18 +83,11 @@ class Home extends Component {
             </form>
             <h1 className="text-center">/r/{subreddit} (but weirder)</h1>
             <hr />
-            {posts.map(
-              (post, i) => (
-                <Post
-                  key={i}
-                  rank={i + 1}
-                  score={post.score}
-                  title={post.title}
-                  url={post.url}
-                />
-              ))}
-
+            <Posts posts={posts} loadingStatus={loadingStatus} subreddit={subreddit} />
+            <br />
             <hr />
+            <br />
+            <h2>UNDER CONSTRUCTION</h2>
             <h2>What Am I looking at here?</h2>
             <p>
               You are looking at <a href="https://en.wikipedia.org/wiki/Markov_chain" target="_blank" title="Markov Chains">Markov Chains</a>!
@@ -102,8 +99,8 @@ class Home extends Component {
             <h3>Caching</h3>
             <p>
               To get interesting results you need to scrape many post titles. To make the results specific to a subreddit, I maintain many different seed files, as well as
-              keep the top posts up to date with the respective subreddits. <em>There are a lot of subreddits</em>, and around 10,000 active subreddits. This is way more subreddits than my measily,
-              <a href="https://www.digitalocean.com/" target="_blank" title="DigitcalOcean">Digital Ocean</a> droplet could ever handle with out some aggressive caching.
+              keep the top posts up to date with the respective subreddits. <em>There are a lot of subreddits</em>, and around 10,000 active subreddits. This is way more subreddits than my
+              measly <a href="https://www.digitalocean.com/" target="_blank" title="DigitcalOcean">Digital Ocean</a> droplet could ever handle with out some aggressive caching.
             </p>
           </Grid>
         </div>

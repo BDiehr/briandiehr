@@ -14,10 +14,12 @@ class PostActions {
   }
 
   getRedditMarkovPostsSuccess(posts) {
+    console.log('SUCCESS ACTION');
     return posts;
   }
 
   getRedditMarkovPostsFailed() {
+    console.log('FAILED ACTION');
     this.dispatch();
   }
 

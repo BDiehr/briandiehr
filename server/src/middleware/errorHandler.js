@@ -17,7 +17,7 @@ function errorHandlerClosure() {
     try {
       yield next;
     } catch (err) {
-      debug('dev')({err: err, errmsg: err.message, stack: err.stack});
+      // debug('dev')({err: err, errmsg: err.message, stack: err.stack});
       ctx.status = err.status && typeof err.status === 'number' && err.status || 400;
       ctx.body = {
         status: ctx.status,

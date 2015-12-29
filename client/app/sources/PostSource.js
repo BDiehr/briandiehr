@@ -14,8 +14,8 @@ const UserSource = {
     },
   },
   getRedditMarkovPosts: {
-    remote() {
-      return PostService.getRedditMarkovPosts();
+    remote(state, subreddit = 'all') {
+      return PostService.getRedditMarkovPosts(subreddit);
     },
     success: PostActions.getRedditMarkovPostsSuccess,
     loading: PostActions.getRedditMarkovPostsLoading,
