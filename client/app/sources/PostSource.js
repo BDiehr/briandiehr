@@ -13,6 +13,17 @@ const UserSource = {
       return true;
     },
   },
+  getRedditMarkovPosts: {
+    remote() {
+      return PostService.getRedditMarkovPosts();
+    },
+    success: PostActions.getRedditMarkovPostsSuccess,
+    loading: PostActions.getRedditMarkovPostsLoading,
+    error: PostActions.getRedditMarkovPostsFailed,
+    shouldFetch() {
+      return true;
+    },
+  },
 };
 
 export default UserSource;

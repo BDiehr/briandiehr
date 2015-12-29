@@ -10,12 +10,11 @@ function redditMarkovChainClosure(app) {
   return co.wrap(function * redditMarkovChain() {
     try {
       debug('dev')('Running analyzeTopPosts service');
-      const topRedditPosts = (yield getTopStoriesReddit(25))
+      const topRedditPosts = (yield getTopStoriesReddit(25, 'aww'))
         .data.children.map(child => child.data);
-
-      const numberOfPosts = 200;
+      const numberOfPosts = 3000;
       /** Fetch Reddit data */
-      const redditTitleTxt = (yield getTopStoriesReddit(numberOfPosts))
+      const redditTitleTxt = (yield getTopStoriesReddit(numberOfPosts, 'aww'))
         .data.children.map(child => child.data)
         .map(post => post.title)
         .reduce((a, b) => `${a}\n${b}`, '');
@@ -45,6 +44,7 @@ function redditMarkovChainClosure(app) {
         const randLength = Math.floor(Math.random * (maxWords - minWords) + minWords)
         return {
           url: post.url,
+          score: post.score,
           title: quotes.start(seedWord).end(randLength).process(),
         }
       });

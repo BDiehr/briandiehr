@@ -7,14 +7,21 @@ import PostActions from '../actions/PostActions';
 class PostStore {
   constructor() {
     this.bindListeners({
+      /** HackerNews vs. Reddit */
       getPostsSuccess: PostActions.getPostsSuccess,
       getPostsFailed: PostActions.getPostsFailed,
       getPostsLoading: PostActions.getPostsLoading,
+      /** Reddit Markov Chain */
+      getRedditMarkovPostsSuccess: PostActions.getRedditMarkovPostsSuccess,
+      getRedditMarkovPostsFailed: PostActions.getRedditMarkovPostsFailed,
+      getRedditMarkovPostsLoading: PostActions.getRedditMarkovPostsLoading,
     });
 
     this.state = {
       topPosts: [],
       postsLoadingStatus: 'IDLE',
+      redditMarkovPosts: [],
+      redditMarkovPostsLoadingStatus: 'IDLE',
     };
   }
 
@@ -28,6 +35,18 @@ class PostStore {
 
   getPostsLoading() {
     this.setState({ postsLoadingStatus: 'LOADING' });
+  }
+
+  getRedditMarkovPostsSuccess(redditMarkovPosts) {
+    this.setState({ redditMarkovPosts, redditMarkovPostsLoadingStatus: 'IDLE' });
+  }
+
+  getRedditMarkovPostsFailed() {
+    this.setState({ redditMarkovPostsLoadingStatus: 'FAILED' });
+  }
+
+  getRedditMarkovPostsLoading() {
+    this.setState({ redditMarkovPostsLoadingStatus: 'LOADING' });
   }
 }
 

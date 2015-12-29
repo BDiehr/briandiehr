@@ -1,0 +1,13 @@
+.reddit-post {
+  &__rank {
+    font-size: 1.6em;
+    color: gray;
+    padding: 0.2em;
+  }
+
+  &__score {
+    font-size: 1em;
+    color: gray;
+    padding: 0.2em;
+  }
+}

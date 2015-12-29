@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { jStat } from 'jStat';
-import '../../../styles/postOverviewSummary.scss';
+import 'styles/postOverviewSummary.scss';
 
 const propTypes = {
   title: PropTypes.string.isRequired,

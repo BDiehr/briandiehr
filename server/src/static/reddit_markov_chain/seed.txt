@@ -1,801 +1,304 @@
 
-Moores law hits the roof - Agner`s CPU blog
-Programming Languages: Application and Interpretation
-Postgres 9.5 - The feature rundown
-The little book about OS development
-A minesweeper clone for Linux I made
-Agner's CPU blog - Test results for Broadwell and Skylake, updated optimization manuals
-Show Proggit: CalcGraph, a C++14 header-only dataflow programming framework
-Javascript Fatigue
-Social Engineering from Kevin Mitnick
-Kemal: Lightning Fast, Super Simple web framework written in Crystal language
-Proposal for an ideal extensible instruction set - Agner`s CPU blog
-A critical analysis of the Legacy Verified proposal by CloudFlare &amp; Facebook
-An Intro to Automated Scanning with Arachni
-Monitor Your Drinking Habits! (with cv2)
-Robert C Martin - Clean Architecture
-UNIX® on the Game Boy Advance (Awesome low level technical overview)
-Managing Programmers by Douglas Crockford
-Curated list of Youtube Channels about Programming. Mostly Tech Conferences
-Futexes are tricky [PDF]
-Music Audience Exchange contacted me to remove my glassdoor review or portions of it. : interviews
-Real Time LPC Spectrum Visualization with Python (speech/audio processing)
-GWT : The Good Bits
-Is Your VirtualBox Reading Your E-Mail? Reconstruction of FrameBuffers from VRAM
-Entering Unicode Characters – Input methods for unicode characters in editors and the shell
-GPS Always Overestimates Distances
-Quick start guide to the MEAN stack w/ Todos
-Software estimations are impossible
-The 32nd Chaos Communication Congress starts in about 15 hours. As usual four days of talks about hacking in the most general sense, with a lot of programming and security (hardware and software) in there, all streamed. A lot of them in English [link to day one's schedule, times in CET (UTC+1)]
-Game Theory - Open Access textbook with 165 solved exercises
-CSound now available for Android
-Efficient Speciation in Genetic Algorithms using k-d Trees
-Focussing On The Big Four
-#Stacked2015 conference (Manchester) - Windows Developer Conference
-Implementing functional languages: a tutorial
-The internet of things is unstoppable!
-Debunking media's popular belief: Learn to code, it’s harder than you think
-Tabs or Spaces - The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages.
-Perl 6 Finally Released!
-Setting up 4 responsive admin layouts with left navigation bar
-How to write a good technical report
-How to Set up NetBeans IDE -|- Java Programming Tutorial
-Interactive programming tools and demos
-Simple Database Migrations with DbUp
-Jigsaw Hands-On Guide - blog@CodeFX
-A tidy, linear Git history
-The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages
-Perl6 : Reflecting, celebrating, and looking forward
-Legendary Productivity And The Fear Of Modern Programming
-PhD thesis on how we can make idiomatic Ruby fast
-D Language IntelliJ plugin released
-Meet Idris, a language that will change the way you think about programming
-An Impromptu Interview about Sovereign Software Development
-Setting Up Swagger 2 with a Spring REST API | Baeldung
-Keyword miner
-Forget the Click Bait. Here’s What the JavaScript Job Market Really Looks Like in 2016.
-The Bkd Tree: A Dynamic Disk Optimized BSP Tree
-Non-linear Thinking with CUDA
-The Bejeweled Playing C# Program
-Santa Claus in Linux Style: Top Linux Hardware and Free Linux/Programming Books &amp; Courses Recommendations
-Kickoff 2016 with 30 Days of Code (for beginners)
-LLVM Tutorial
-Yahoo logo, animation in 462 bytes of C
-Perl 6 released
-Rich Domain Doesn't Mean Fat Objects
-Ruby 2.3.0 Released
-I created a Hacker News Alternative (one more focused on computer science and is under active development)
-Artificial Intelligence 101: How to Get Started
-Parrot - a new messenger written in Swift that works with Hangouts
-netbout - An efficient Java based chat framework
-You should make a Doom level, part 1: the basics
-Gamification implementation - Play where you used to work, a brief intro to gamification and its implementation as a micro-service
-git-refork: Easily sync forks with upstream.
-Automate to save mental energy, not time
-Freelancing with Python and Fiverr
-Python/redis - Text Classifier
-10 Most Popular Javascript Libraries started in 2015
-Press Release: F# Software Foundation Granted 501(c)(3) Nonprofit Status
-Melody's guide programming languages: she hates them all
-Three simple but useful tutorials on Swift. Check it out.
-Faker, random data generate for tests
-Like Bernie Sanders? Want to do a little volunteering for him? Put your Ruby on Rails skills to good use!
-Funny Commit Message in Kernel
-Comparing the Upgrade Process of Dart and TypeScript Apps to Angular 2 beta.0 · Anton Moiseev
-I created Photish, a simple multithreaded static photo portfolio generator
-Generic event emitter/dispatcher in Go
-Parsing Expressions by Recursive Descent
-Lux Tutorial #1: Simple TODO list using Vert.x
-How to get started with Open Source - HackerEarth
-It's Christmas in Denmark on the 24th, so I'm so sorry.. I don't know why I did this.
-Open letter to Mozilla: Bring back Persona
-Want to Write a Compiler? Just Read These Two Papers.
-Advanced programming languages
-A Brief Introduction to REST
-HANGMAN GAME in less than 80 lines of code using PYTHON for beginners
-Regular Expression Crossword Puzzle
-MAKING A SIMPLE GAME USING PYTHON for Beginners
-Programming + The Bible = this game
-Write .Net and Node.js code together using Edge.js
-Desktop application using Flask and QtWebkit
-Larry wall : Perl 6 release announcement
-Moores law hits the roof - Agner`s CPU blog
-Programming Languages: Application and Interpretation
-Postgres 9.5 - The feature rundown
-The little book about OS development
-A minesweeper clone for Linux I made
-Agner's CPU blog - Test results for Broadwell and Skylake, updated optimization manuals
-Show Proggit: CalcGraph, a C++14 header-only dataflow programming framework
-Javascript Fatigue
-Social Engineering from Kevin Mitnick
-Kemal: Lightning Fast, Super Simple web framework written in Crystal language
-Proposal for an ideal extensible instruction set - Agner`s CPU blog
-A critical analysis of the Legacy Verified proposal by CloudFlare &amp; Facebook
-An Intro to Automated Scanning with Arachni
-Monitor Your Drinking Habits! (with cv2)
-Robert C Martin - Clean Architecture
-UNIX® on the Game Boy Advance (Awesome low level technical overview)
-Managing Programmers by Douglas Crockford
-Curated list of Youtube Channels about Programming. Mostly Tech Conferences
-Futexes are tricky [PDF]
-Music Audience Exchange contacted me to remove my glassdoor review or portions of it. : interviews
-Real Time LPC Spectrum Visualization with Python (speech/audio processing)
-GWT : The Good Bits
-Is Your VirtualBox Reading Your E-Mail? Reconstruction of FrameBuffers from VRAM
-Entering Unicode Characters – Input methods for unicode characters in editors and the shell
-GPS Always Overestimates Distances
-Quick start guide to the MEAN stack w/ Todos
-Software estimations are impossible
-The 32nd Chaos Communication Congress starts in about 15 hours. As usual four days of talks about hacking in the most general sense, with a lot of programming and security (hardware and software) in there, all streamed. A lot of them in English [link to day one's schedule, times in CET (UTC+1)]
-Game Theory - Open Access textbook with 165 solved exercises
-CSound now available for Android
-Efficient Speciation in Genetic Algorithms using k-d Trees
-Focussing On The Big Four
-#Stacked2015 conference (Manchester) - Windows Developer Conference
-Implementing functional languages: a tutorial
-The internet of things is unstoppable!
-Debunking media's popular belief: Learn to code, it’s harder than you think
-Tabs or Spaces - The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages.
-Perl 6 Finally Released!
-Setting up 4 responsive admin layouts with left navigation bar
-How to write a good technical report
-How to Set up NetBeans IDE -|- Java Programming Tutorial
-Interactive programming tools and demos
-Simple Database Migrations with DbUp
-Jigsaw Hands-On Guide - blog@CodeFX
-A tidy, linear Git history
-The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages
-Perl6 : Reflecting, celebrating, and looking forward
-Legendary Productivity And The Fear Of Modern Programming
-PhD thesis on how we can make idiomatic Ruby fast
-D Language IntelliJ plugin released
-Meet Idris, a language that will change the way you think about programming
-An Impromptu Interview about Sovereign Software Development
-Setting Up Swagger 2 with a Spring REST API | Baeldung
-Keyword miner
-Forget the Click Bait. Here’s What the JavaScript Job Market Really Looks Like in 2016.
-The Bkd Tree: A Dynamic Disk Optimized BSP Tree
-Non-linear Thinking with CUDA
-The Bejeweled Playing C# Program
-Santa Claus in Linux Style: Top Linux Hardware and Free Linux/Programming Books &amp; Courses Recommendations
-Kickoff 2016 with 30 Days of Code (for beginners)
-LLVM Tutorial
-Yahoo logo, animation in 462 bytes of C
-Perl 6 released
-Rich Domain Doesn't Mean Fat Objects
-Ruby 2.3.0 Released
-I created a Hacker News Alternative (one more focused on computer science and is under active development)
-Artificial Intelligence 101: How to Get Started
-Parrot - a new messenger written in Swift that works with Hangouts
-netbout - An efficient Java based chat framework
-You should make a Doom level, part 1: the basics
-Gamification implementation - Play where you used to work, a brief intro to gamification and its implementation as a micro-service
-git-refork: Easily sync forks with upstream.
-Automate to save mental energy, not time
-Freelancing with Python and Fiverr
-Python/redis - Text Classifier
-10 Most Popular Javascript Libraries started in 2015
-Press Release: F# Software Foundation Granted 501(c)(3) Nonprofit Status
-Melody's guide programming languages: she hates them all
-Three simple but useful tutorials on Swift. Check it out.
-Faker, random data generate for tests
-Like Bernie Sanders? Want to do a little volunteering for him? Put your Ruby on Rails skills to good use!
-Funny Commit Message in Kernel
-Comparing the Upgrade Process of Dart and TypeScript Apps to Angular 2 beta.0 · Anton Moiseev
-I created Photish, a simple multithreaded static photo portfolio generator
-Generic event emitter/dispatcher in Go
-Parsing Expressions by Recursive Descent
-Lux Tutorial #1: Simple TODO list using Vert.x
-How to get started with Open Source - HackerEarth
-It's Christmas in Denmark on the 24th, so I'm so sorry.. I don't know why I did this.
-Open letter to Mozilla: Bring back Persona
-Want to Write a Compiler? Just Read These Two Papers.
-Advanced programming languages
-A Brief Introduction to REST
-HANGMAN GAME in less than 80 lines of code using PYTHON for beginners
-Regular Expression Crossword Puzzle
-MAKING A SIMPLE GAME USING PYTHON for Beginners
-Programming + The Bible = this game
-Write .Net and Node.js code together using Edge.js
-Desktop application using Flask and QtWebkit
-Larry wall : Perl 6 release announcement
-Moores law hits the roof - Agner`s CPU blog
-Programming Languages: Application and Interpretation
-Postgres 9.5 - The feature rundown
-The little book about OS development
-A minesweeper clone for Linux I made
-Agner's CPU blog - Test results for Broadwell and Skylake, updated optimization manuals
-Show Proggit: CalcGraph, a C++14 header-only dataflow programming framework
-Javascript Fatigue
-Social Engineering from Kevin Mitnick
-Kemal: Lightning Fast, Super Simple web framework written in Crystal language
-Proposal for an ideal extensible instruction set - Agner`s CPU blog
-A critical analysis of the Legacy Verified proposal by CloudFlare &amp; Facebook
-An Intro to Automated Scanning with Arachni
-Monitor Your Drinking Habits! (with cv2)
-Robert C Martin - Clean Architecture
-UNIX® on the Game Boy Advance (Awesome low level technical overview)
-Managing Programmers by Douglas Crockford
-Curated list of Youtube Channels about Programming. Mostly Tech Conferences
-Futexes are tricky [PDF]
-Music Audience Exchange contacted me to remove my glassdoor review or portions of it. : interviews
-Real Time LPC Spectrum Visualization with Python (speech/audio processing)
-GWT : The Good Bits
-Is Your VirtualBox Reading Your E-Mail? Reconstruction of FrameBuffers from VRAM
-Entering Unicode Characters – Input methods for unicode characters in editors and the shell
-GPS Always Overestimates Distances
-Quick start guide to the MEAN stack w/ Todos
-Software estimations are impossible
-The 32nd Chaos Communication Congress starts in about 15 hours. As usual four days of talks about hacking in the most general sense, with a lot of programming and security (hardware and software) in there, all streamed. A lot of them in English [link to day one's schedule, times in CET (UTC+1)]
-Game Theory - Open Access textbook with 165 solved exercises
-CSound now available for Android
-Efficient Speciation in Genetic Algorithms using k-d Trees
-Focussing On The Big Four
-#Stacked2015 conference (Manchester) - Windows Developer Conference
-Implementing functional languages: a tutorial
-The internet of things is unstoppable!
-Debunking media's popular belief: Learn to code, it’s harder than you think
-Tabs or Spaces - The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages.
-Perl 6 Finally Released!
-Setting up 4 responsive admin layouts with left navigation bar
-How to write a good technical report
-How to Set up NetBeans IDE -|- Java Programming Tutorial
-Interactive programming tools and demos
-Simple Database Migrations with DbUp
-Jigsaw Hands-On Guide - blog@CodeFX
-A tidy, linear Git history
-The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages
-Perl6 : Reflecting, celebrating, and looking forward
-Legendary Productivity And The Fear Of Modern Programming
-PhD thesis on how we can make idiomatic Ruby fast
-D Language IntelliJ plugin released
-Meet Idris, a language that will change the way you think about programming
-An Impromptu Interview about Sovereign Software Development
-Setting Up Swagger 2 with a Spring REST API | Baeldung
-Keyword miner
-Forget the Click Bait. Here’s What the JavaScript Job Market Really Looks Like in 2016.
-The Bkd Tree: A Dynamic Disk Optimized BSP Tree
-Non-linear Thinking with CUDA
-The Bejeweled Playing C# Program
-Santa Claus in Linux Style: Top Linux Hardware and Free Linux/Programming Books &amp; Courses Recommendations
-Kickoff 2016 with 30 Days of Code (for beginners)
-LLVM Tutorial
-Yahoo logo, animation in 462 bytes of C
-Perl 6 released
-Rich Domain Doesn't Mean Fat Objects
-Ruby 2.3.0 Released
-I created a Hacker News Alternative (one more focused on computer science and is under active development)
-Artificial Intelligence 101: How to Get Started
-Parrot - a new messenger written in Swift that works with Hangouts
-netbout - An efficient Java based chat framework
-You should make a Doom level, part 1: the basics
-Gamification implementation - Play where you used to work, a brief intro to gamification and its implementation as a micro-service
-git-refork: Easily sync forks with upstream.
-Automate to save mental energy, not time
-Freelancing with Python and Fiverr
-Python/redis - Text Classifier
-10 Most Popular Javascript Libraries started in 2015
-Press Release: F# Software Foundation Granted 501(c)(3) Nonprofit Status
-Melody's guide programming languages: she hates them all
-Three simple but useful tutorials on Swift. Check it out.
-Faker, random data generate for tests
-Like Bernie Sanders? Want to do a little volunteering for him? Put your Ruby on Rails skills to good use!
-Funny Commit Message in Kernel
-Comparing the Upgrade Process of Dart and TypeScript Apps to Angular 2 beta.0 · Anton Moiseev
-I created Photish, a simple multithreaded static photo portfolio generator
-Generic event emitter/dispatcher in Go
-Parsing Expressions by Recursive Descent
-Lux Tutorial #1: Simple TODO list using Vert.x
-How to get started with Open Source - HackerEarth
-It's Christmas in Denmark on the 24th, so I'm so sorry.. I don't know why I did this.
-Open letter to Mozilla: Bring back Persona
-Want to Write a Compiler? Just Read These Two Papers.
-Advanced programming languages
-A Brief Introduction to REST
-HANGMAN GAME in less than 80 lines of code using PYTHON for beginners
-Regular Expression Crossword Puzzle
-MAKING A SIMPLE GAME USING PYTHON for Beginners
-Programming + The Bible = this game
-Write .Net and Node.js code together using Edge.js
-Desktop application using Flask and QtWebkit
-Larry wall : Perl 6 release announcement
-Moores law hits the roof - Agner`s CPU blog
-Programming Languages: Application and Interpretation
-Postgres 9.5 - The feature rundown
-The little book about OS development
-A minesweeper clone for Linux I made
-Agner's CPU blog - Test results for Broadwell and Skylake, updated optimization manuals
-Javascript Fatigue
-Show Proggit: CalcGraph, a C++14 header-only dataflow programming framework
-Social Engineering from Kevin Mitnick
-Kemal: Lightning Fast, Super Simple web framework written in Crystal language
-Proposal for an ideal extensible instruction set - Agner`s CPU blog
-A critical analysis of the Legacy Verified proposal by CloudFlare &amp; Facebook
-An Intro to Automated Scanning with Arachni
-Monitor Your Drinking Habits! (with cv2)
-Robert C Martin - Clean Architecture
-Curated list of Youtube Channels about Programming. Mostly Tech Conferences
-UNIX® on the Game Boy Advance (Awesome low level technical overview)
-Managing Programmers by Douglas Crockford
-Futexes are tricky [PDF]
-Music Audience Exchange contacted me to remove my glassdoor review or portions of it. : interviews
-Real Time LPC Spectrum Visualization with Python (speech/audio processing)
-GWT : The Good Bits
-Is Your VirtualBox Reading Your E-Mail? Reconstruction of FrameBuffers from VRAM
-Entering Unicode Characters – Input methods for unicode characters in editors and the shell
-GPS Always Overestimates Distances
-Software estimations are impossible
-Quick start guide to the MEAN stack w/ Todos
-The 32nd Chaos Communication Congress starts in about 15 hours. As usual four days of talks about hacking in the most general sense, with a lot of programming and security (hardware and software) in there, all streamed. A lot of them in English [link to day one's schedule, times in CET (UTC+1)]
-Game Theory - Open Access textbook with 165 solved exercises
-CSound now available for Android
-Efficient Speciation in Genetic Algorithms using k-d Trees
-Focussing On The Big Four
-#Stacked2015 conference (Manchester) - Windows Developer Conference
-Implementing functional languages: a tutorial
-The internet of things is unstoppable!
-Debunking media's popular belief: Learn to code, it’s harder than you think
-Tabs or Spaces - The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages.
-Perl 6 Finally Released!
-Setting up 4 responsive admin layouts with left navigation bar
-How to write a good technical report
-How to Set up NetBeans IDE -|- Java Programming Tutorial
-Interactive programming tools and demos
-Simple Database Migrations with DbUp
-Jigsaw Hands-On Guide - blog@CodeFX
-A tidy, linear Git history
-Legendary Productivity And The Fear Of Modern Programming
-The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages
-Perl6 : Reflecting, celebrating, and looking forward
-PhD thesis on how we can make idiomatic Ruby fast
-D Language IntelliJ plugin released
-Meet Idris, a language that will change the way you think about programming
-An Impromptu Interview about Sovereign Software Development
-Setting Up Swagger 2 with a Spring REST API | Baeldung
-Keyword miner
-Forget the Click Bait. Here’s What the JavaScript Job Market Really Looks Like in 2016.
-The Bkd Tree: A Dynamic Disk Optimized BSP Tree
-Non-linear Thinking with CUDA
-The Bejeweled Playing C# Program
-Santa Claus in Linux Style: Top Linux Hardware and Free Linux/Programming Books &amp; Courses Recommendations
-Kickoff 2016 with 30 Days of Code (for beginners)
-LLVM Tutorial
-Yahoo logo, animation in 462 bytes of C
-Perl 6 released
-Rich Domain Doesn't Mean Fat Objects
-Ruby 2.3.0 Released
-I created a Hacker News Alternative (one more focused on computer science and is under active development)
-Artificial Intelligence 101: How to Get Started
-Parrot - a new messenger written in Swift that works with Hangouts
-netbout - An efficient Java based chat framework
-You should make a Doom level, part 1: the basics
-Gamification implementation - Play where you used to work, a brief intro to gamification and its implementation as a micro-service
-git-refork: Easily sync forks with upstream.
-Automate to save mental energy, not time
-Freelancing with Python and Fiverr
-Python/redis - Text Classifier
-10 Most Popular Javascript Libraries started in 2015
-Press Release: F# Software Foundation Granted 501(c)(3) Nonprofit Status
-Melody's guide programming languages: she hates them all
-Three simple but useful tutorials on Swift. Check it out.
-Faker, random data generate for tests
-Like Bernie Sanders? Want to do a little volunteering for him? Put your Ruby on Rails skills to good use!
-Funny Commit Message in Kernel
-Comparing the Upgrade Process of Dart and TypeScript Apps to Angular 2 beta.0 · Anton Moiseev
-I created Photish, a simple multithreaded static photo portfolio generator
-Generic event emitter/dispatcher in Go
-Parsing Expressions by Recursive Descent
-Lux Tutorial #1: Simple TODO list using Vert.x
-How to get started with Open Source - HackerEarth
-It's Christmas in Denmark on the 24th, so I'm so sorry.. I don't know why I did this.
-Open letter to Mozilla: Bring back Persona
-Want to Write a Compiler? Just Read These Two Papers.
-Advanced programming languages
-A Brief Introduction to REST
-HANGMAN GAME in less than 80 lines of code using PYTHON for beginners
-Regular Expression Crossword Puzzle
-MAKING A SIMPLE GAME USING PYTHON for Beginners
-Programming + The Bible = this game
-Write .Net and Node.js code together using Edge.js
-Desktop application using Flask and QtWebkit
-Larry wall : Perl 6 release announcement
-Moores law hits the roof - Agner`s CPU blog
-Programming Languages: Application and Interpretation
-Postgres 9.5 - The feature rundown
-The little book about OS development
-A minesweeper clone for Linux I made
-Agner's CPU blog - Test results for Broadwell and Skylake, updated optimization manuals
-Javascript Fatigue
-Show Proggit: CalcGraph, a C++14 header-only dataflow programming framework
-Social Engineering from Kevin Mitnick
-Kemal: Lightning Fast, Super Simple web framework written in Crystal language
-Proposal for an ideal extensible instruction set - Agner`s CPU blog
-A critical analysis of the Legacy Verified proposal by CloudFlare &amp; Facebook
-An Intro to Automated Scanning with Arachni
-Monitor Your Drinking Habits! (with cv2)
-Robert C Martin - Clean Architecture
-Curated list of Youtube Channels about Programming. Mostly Tech Conferences
-UNIX® on the Game Boy Advance (Awesome low level technical overview)
-Managing Programmers by Douglas Crockford
-Futexes are tricky [PDF]
-Music Audience Exchange contacted me to remove my glassdoor review or portions of it. : interviews
-Real Time LPC Spectrum Visualization with Python (speech/audio processing)
-GWT : The Good Bits
-Is Your VirtualBox Reading Your E-Mail? Reconstruction of FrameBuffers from VRAM
-Entering Unicode Characters – Input methods for unicode characters in editors and the shell
-GPS Always Overestimates Distances
-Software estimations are impossible
-Quick start guide to the MEAN stack w/ Todos
-The 32nd Chaos Communication Congress starts in about 15 hours. As usual four days of talks about hacking in the most general sense, with a lot of programming and security (hardware and software) in there, all streamed. A lot of them in English [link to day one's schedule, times in CET (UTC+1)]
-Game Theory - Open Access textbook with 165 solved exercises
-CSound now available for Android
-Efficient Speciation in Genetic Algorithms using k-d Trees
-Focussing On The Big Four
-#Stacked2015 conference (Manchester) - Windows Developer Conference
-Implementing functional languages: a tutorial
-The internet of things is unstoppable!
-Debunking media's popular belief: Learn to code, it’s harder than you think
-Tabs or Spaces - The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages.
-Perl 6 Finally Released!
-Setting up 4 responsive admin layouts with left navigation bar
-How to write a good technical report
-How to Set up NetBeans IDE -|- Java Programming Tutorial
-Interactive programming tools and demos
-Simple Database Migrations with DbUp
-Jigsaw Hands-On Guide - blog@CodeFX
-A tidy, linear Git history
-Legendary Productivity And The Fear Of Modern Programming
-The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages
-Perl6 : Reflecting, celebrating, and looking forward
-PhD thesis on how we can make idiomatic Ruby fast
-D Language IntelliJ plugin released
-Meet Idris, a language that will change the way you think about programming
-An Impromptu Interview about Sovereign Software Development
-Setting Up Swagger 2 with a Spring REST API | Baeldung
-Keyword miner
-Forget the Click Bait. Here’s What the JavaScript Job Market Really Looks Like in 2016.
-The Bkd Tree: A Dynamic Disk Optimized BSP Tree
-Non-linear Thinking with CUDA
-The Bejeweled Playing C# Program
-Santa Claus in Linux Style: Top Linux Hardware and Free Linux/Programming Books &amp; Courses Recommendations
-Kickoff 2016 with 30 Days of Code (for beginners)
-LLVM Tutorial
-Yahoo logo, animation in 462 bytes of C
-Perl 6 released
-Rich Domain Doesn't Mean Fat Objects
-Ruby 2.3.0 Released
-I created a Hacker News Alternative (one more focused on computer science and is under active development)
-Artificial Intelligence 101: How to Get Started
-Parrot - a new messenger written in Swift that works with Hangouts
-netbout - An efficient Java based chat framework
-You should make a Doom level, part 1: the basics
-Gamification implementation - Play where you used to work, a brief intro to gamification and its implementation as a micro-service
-git-refork: Easily sync forks with upstream.
-Automate to save mental energy, not time
-Freelancing with Python and Fiverr
-Python/redis - Text Classifier
-10 Most Popular Javascript Libraries started in 2015
-Press Release: F# Software Foundation Granted 501(c)(3) Nonprofit Status
-Melody's guide programming languages: she hates them all
-Three simple but useful tutorials on Swift. Check it out.
-Faker, random data generate for tests
-Like Bernie Sanders? Want to do a little volunteering for him? Put your Ruby on Rails skills to good use!
-Funny Commit Message in Kernel
-Comparing the Upgrade Process of Dart and TypeScript Apps to Angular 2 beta.0 · Anton Moiseev
-I created Photish, a simple multithreaded static photo portfolio generator
-Generic event emitter/dispatcher in Go
-Parsing Expressions by Recursive Descent
-Lux Tutorial #1: Simple TODO list using Vert.x
-How to get started with Open Source - HackerEarth
-It's Christmas in Denmark on the 24th, so I'm so sorry.. I don't know why I did this.
-Open letter to Mozilla: Bring back Persona
-Want to Write a Compiler? Just Read These Two Papers.
-Advanced programming languages
-A Brief Introduction to REST
-HANGMAN GAME in less than 80 lines of code using PYTHON for beginners
-Regular Expression Crossword Puzzle
-MAKING A SIMPLE GAME USING PYTHON for Beginners
-Programming + The Bible = this game
-Write .Net and Node.js code together using Edge.js
-Desktop application using Flask and QtWebkit
-Larry wall : Perl 6 release announcement
-Moores law hits the roof - Agner`s CPU blog
-Programming Languages: Application and Interpretation
-Postgres 9.5 - The feature rundown
-The little book about OS development
-A minesweeper clone for Linux I made
-Agner's CPU blog - Test results for Broadwell and Skylake, updated optimization manuals
-Javascript Fatigue
-Show Proggit: CalcGraph, a C++14 header-only dataflow programming framework
-Social Engineering from Kevin Mitnick
-Kemal: Lightning Fast, Super Simple web framework written in Crystal language
-Proposal for an ideal extensible instruction set - Agner`s CPU blog
-A critical analysis of the Legacy Verified proposal by CloudFlare &amp; Facebook
-An Intro to Automated Scanning with Arachni
-Monitor Your Drinking Habits! (with cv2)
-Robert C Martin - Clean Architecture
-Curated list of Youtube Channels about Programming. Mostly Tech Conferences
-UNIX® on the Game Boy Advance (Awesome low level technical overview)
-Managing Programmers by Douglas Crockford
-Futexes are tricky [PDF]
-Music Audience Exchange contacted me to remove my glassdoor review or portions of it. : interviews
-Real Time LPC Spectrum Visualization with Python (speech/audio processing)
-GWT : The Good Bits
-Is Your VirtualBox Reading Your E-Mail? Reconstruction of FrameBuffers from VRAM
-Entering Unicode Characters – Input methods for unicode characters in editors and the shell
-GPS Always Overestimates Distances
-Software estimations are impossible
-Quick start guide to the MEAN stack w/ Todos
-The 32nd Chaos Communication Congress starts in about 15 hours. As usual four days of talks about hacking in the most general sense, with a lot of programming and security (hardware and software) in there, all streamed. A lot of them in English [link to day one's schedule, times in CET (UTC+1)]
-Game Theory - Open Access textbook with 165 solved exercises
-CSound now available for Android
-Efficient Speciation in Genetic Algorithms using k-d Trees
-Focussing On The Big Four
-#Stacked2015 conference (Manchester) - Windows Developer Conference
-Implementing functional languages: a tutorial
-The internet of things is unstoppable!
-Debunking media's popular belief: Learn to code, it’s harder than you think
-Tabs or Spaces - The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages.
-Perl 6 Finally Released!
-Setting up 4 responsive admin layouts with left navigation bar
-How to write a good technical report
-How to Set up NetBeans IDE -|- Java Programming Tutorial
-Interactive programming tools and demos
-Simple Database Migrations with DbUp
-Jigsaw Hands-On Guide - blog@CodeFX
-A tidy, linear Git history
-Legendary Productivity And The Fear Of Modern Programming
-The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages
-Perl6 : Reflecting, celebrating, and looking forward
-PhD thesis on how we can make idiomatic Ruby fast
-D Language IntelliJ plugin released
-Meet Idris, a language that will change the way you think about programming
-An Impromptu Interview about Sovereign Software Development
-Setting Up Swagger 2 with a Spring REST API | Baeldung
-Keyword miner
-Forget the Click Bait. Here’s What the JavaScript Job Market Really Looks Like in 2016.
-The Bkd Tree: A Dynamic Disk Optimized BSP Tree
-Non-linear Thinking with CUDA
-The Bejeweled Playing C# Program
-Santa Claus in Linux Style: Top Linux Hardware and Free Linux/Programming Books &amp; Courses Recommendations
-Kickoff 2016 with 30 Days of Code (for beginners)
-LLVM Tutorial
-Yahoo logo, animation in 462 bytes of C
-Perl 6 released
-Rich Domain Doesn't Mean Fat Objects
-Ruby 2.3.0 Released
-I created a Hacker News Alternative (one more focused on computer science and is under active development)
-Artificial Intelligence 101: How to Get Started
-Parrot - a new messenger written in Swift that works with Hangouts
-netbout - An efficient Java based chat framework
-You should make a Doom level, part 1: the basics
-Gamification implementation - Play where you used to work, a brief intro to gamification and its implementation as a micro-service
-git-refork: Easily sync forks with upstream.
-Automate to save mental energy, not time
-Freelancing with Python and Fiverr
-Python/redis - Text Classifier
-10 Most Popular Javascript Libraries started in 2015
-Press Release: F# Software Foundation Granted 501(c)(3) Nonprofit Status
-Melody's guide programming languages: she hates them all
-Three simple but useful tutorials on Swift. Check it out.
-Faker, random data generate for tests
-Like Bernie Sanders? Want to do a little volunteering for him? Put your Ruby on Rails skills to good use!
-Funny Commit Message in Kernel
-Comparing the Upgrade Process of Dart and TypeScript Apps to Angular 2 beta.0 · Anton Moiseev
-I created Photish, a simple multithreaded static photo portfolio generator
-Generic event emitter/dispatcher in Go
-Parsing Expressions by Recursive Descent
-Lux Tutorial #1: Simple TODO list using Vert.x
-How to get started with Open Source - HackerEarth
-It's Christmas in Denmark on the 24th, so I'm so sorry.. I don't know why I did this.
-Open letter to Mozilla: Bring back Persona
-Want to Write a Compiler? Just Read These Two Papers.
-Advanced programming languages
-A Brief Introduction to REST
-HANGMAN GAME in less than 80 lines of code using PYTHON for beginners
-Regular Expression Crossword Puzzle
-MAKING A SIMPLE GAME USING PYTHON for Beginners
-Programming + The Bible = this game
-Write .Net and Node.js code together using Edge.js
-Desktop application using Flask and QtWebkit
-Larry wall : Perl 6 release announcement
-Moores law hits the roof - Agner`s CPU blog
-Programming Languages: Application and Interpretation
-Postgres 9.5 - The feature rundown
-The little book about OS development
-A minesweeper clone for Linux I made
-Agner's CPU blog - Test results for Broadwell and Skylake, updated optimization manuals
-Javascript Fatigue
-Show Proggit: CalcGraph, a C++14 header-only dataflow programming framework
-Social Engineering from Kevin Mitnick
-Kemal: Lightning Fast, Super Simple web framework written in Crystal language
-Proposal for an ideal extensible instruction set - Agner`s CPU blog
-A critical analysis of the Legacy Verified proposal by CloudFlare &amp; Facebook
-An Intro to Automated Scanning with Arachni
-Monitor Your Drinking Habits! (with cv2)
-Robert C Martin - Clean Architecture
-Curated list of Youtube Channels about Programming. Mostly Tech Conferences
-UNIX® on the Game Boy Advance (Awesome low level technical overview)
-Managing Programmers by Douglas Crockford
-Futexes are tricky [PDF]
-Music Audience Exchange contacted me to remove my glassdoor review or portions of it. : interviews
-Real Time LPC Spectrum Visualization with Python (speech/audio processing)
-GWT : The Good Bits
-Is Your VirtualBox Reading Your E-Mail? Reconstruction of FrameBuffers from VRAM
-Entering Unicode Characters – Input methods for unicode characters in editors and the shell
-GPS Always Overestimates Distances
-Software estimations are impossible
-Quick start guide to the MEAN stack w/ Todos
-The 32nd Chaos Communication Congress starts in about 15 hours. As usual four days of talks about hacking in the most general sense, with a lot of programming and security (hardware and software) in there, all streamed. A lot of them in English [link to day one's schedule, times in CET (UTC+1)]
-Game Theory - Open Access textbook with 165 solved exercises
-CSound now available for Android
-Efficient Speciation in Genetic Algorithms using k-d Trees
-Focussing On The Big Four
-#Stacked2015 conference (Manchester) - Windows Developer Conference
-Implementing functional languages: a tutorial
-The internet of things is unstoppable!
-Debunking media's popular belief: Learn to code, it’s harder than you think
-Tabs or Spaces - The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages.
-Perl 6 Finally Released!
-Setting up 4 responsive admin layouts with left navigation bar
-How to write a good technical report
-How to Set up NetBeans IDE -|- Java Programming Tutorial
-Interactive programming tools and demos
-Simple Database Migrations with DbUp
-Jigsaw Hands-On Guide - blog@CodeFX
-A tidy, linear Git history
-Legendary Productivity And The Fear Of Modern Programming
-The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages
-Perl6 : Reflecting, celebrating, and looking forward
-PhD thesis on how we can make idiomatic Ruby fast
-D Language IntelliJ plugin released
-Meet Idris, a language that will change the way you think about programming
-An Impromptu Interview about Sovereign Software Development
-Setting Up Swagger 2 with a Spring REST API | Baeldung
-Keyword miner
-Forget the Click Bait. Here’s What the JavaScript Job Market Really Looks Like in 2016.
-The Bkd Tree: A Dynamic Disk Optimized BSP Tree
-Non-linear Thinking with CUDA
-The Bejeweled Playing C# Program
-Santa Claus in Linux Style: Top Linux Hardware and Free Linux/Programming Books &amp; Courses Recommendations
-Kickoff 2016 with 30 Days of Code (for beginners)
-LLVM Tutorial
-Yahoo logo, animation in 462 bytes of C
-Perl 6 released
-Rich Domain Doesn't Mean Fat Objects
-Ruby 2.3.0 Released
-I created a Hacker News Alternative (one more focused on computer science and is under active development)
-Artificial Intelligence 101: How to Get Started
-Parrot - a new messenger written in Swift that works with Hangouts
-netbout - An efficient Java based chat framework
-You should make a Doom level, part 1: the basics
-Gamification implementation - Play where you used to work, a brief intro to gamification and its implementation as a micro-service
-git-refork: Easily sync forks with upstream.
-Automate to save mental energy, not time
-Freelancing with Python and Fiverr
-Python/redis - Text Classifier
-10 Most Popular Javascript Libraries started in 2015
-Press Release: F# Software Foundation Granted 501(c)(3) Nonprofit Status
-Melody's guide programming languages: she hates them all
-Three simple but useful tutorials on Swift. Check it out.
-Faker, random data generate for tests
-Like Bernie Sanders? Want to do a little volunteering for him? Put your Ruby on Rails skills to good use!
-Funny Commit Message in Kernel
-Comparing the Upgrade Process of Dart and TypeScript Apps to Angular 2 beta.0 · Anton Moiseev
-I created Photish, a simple multithreaded static photo portfolio generator
-Generic event emitter/dispatcher in Go
-Parsing Expressions by Recursive Descent
-Lux Tutorial #1: Simple TODO list using Vert.x
-How to get started with Open Source - HackerEarth
-It's Christmas in Denmark on the 24th, so I'm so sorry.. I don't know why I did this.
-Open letter to Mozilla: Bring back Persona
-Want to Write a Compiler? Just Read These Two Papers.
-Advanced programming languages
-A Brief Introduction to REST
-HANGMAN GAME in less than 80 lines of code using PYTHON for beginners
-Regular Expression Crossword Puzzle
-MAKING A SIMPLE GAME USING PYTHON for Beginners
-Programming + The Bible = this game
-Write .Net and Node.js code together using Edge.js
-Desktop application using Flask and QtWebkit
-Larry wall : Perl 6 release announcement
-Moores law hits the roof - Agner`s CPU blog
-Programming Languages: Application and Interpretation
-Postgres 9.5 - The feature rundown
-The little book about OS development
-A minesweeper clone for Linux I made
-Agner's CPU blog - Test results for Broadwell and Skylake, updated optimization manuals
-Javascript Fatigue
-Show Proggit: CalcGraph, a C++14 header-only dataflow programming framework
-Social Engineering from Kevin Mitnick
-Kemal: Lightning Fast, Super Simple web framework written in Crystal language
-Proposal for an ideal extensible instruction set - Agner`s CPU blog
-A critical analysis of the Legacy Verified proposal by CloudFlare &amp; Facebook
-An Intro to Automated Scanning with Arachni
-Monitor Your Drinking Habits! (with cv2)
-Robert C Martin - Clean Architecture
-Curated list of Youtube Channels about Programming. Mostly Tech Conferences
-UNIX® on the Game Boy Advance (Awesome low level technical overview)
-Managing Programmers by Douglas Crockford
-Futexes are tricky [PDF]
-Music Audience Exchange contacted me to remove my glassdoor review or portions of it. : interviews
-Real Time LPC Spectrum Visualization with Python (speech/audio processing)
-GWT : The Good Bits
-Is Your VirtualBox Reading Your E-Mail? Reconstruction of FrameBuffers from VRAM
-Entering Unicode Characters – Input methods for unicode characters in editors and the shell
-GPS Always Overestimates Distances
-Software estimations are impossible
-Quick start guide to the MEAN stack w/ Todos
-The 32nd Chaos Communication Congress starts in about 15 hours. As usual four days of talks about hacking in the most general sense, with a lot of programming and security (hardware and software) in there, all streamed. A lot of them in English [link to day one's schedule, times in CET (UTC+1)]
-Game Theory - Open Access textbook with 165 solved exercises
-CSound now available for Android
-Efficient Speciation in Genetic Algorithms using k-d Trees
-Focussing On The Big Four
-#Stacked2015 conference (Manchester) - Windows Developer Conference
-Implementing functional languages: a tutorial
-The internet of things is unstoppable!
-Debunking media's popular belief: Learn to code, it’s harder than you think
-Tabs or Spaces - The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages.
-Perl 6 Finally Released!
-Setting up 4 responsive admin layouts with left navigation bar
-How to write a good technical report
-How to Set up NetBeans IDE -|- Java Programming Tutorial
-Interactive programming tools and demos
-Simple Database Migrations with DbUp
-Jigsaw Hands-On Guide - blog@CodeFX
-A tidy, linear Git history
-Legendary Productivity And The Fear Of Modern Programming
-The Top Starred repositories in Github have been analysed to understand which are the most common whitespace types in different programming languages
-Perl6 : Reflecting, celebrating, and looking forward
-PhD thesis on how we can make idiomatic Ruby fast
-D Language IntelliJ plugin released
-Meet Idris, a language that will change the way you think about programming
-An Impromptu Interview about Sovereign Software Development
-Setting Up Swagger 2 with a Spring REST API | Baeldung
-Keyword miner
-Forget the Click Bait. Here’s What the JavaScript Job Market Really Looks Like in 2016.
-The Bkd Tree: A Dynamic Disk Optimized BSP Tree
-Non-linear Thinking with CUDA
-The Bejeweled Playing C# Program
-Santa Claus in Linux Style: Top Linux Hardware and Free Linux/Programming Books &amp; Courses Recommendations
-Kickoff 2016 with 30 Days of Code (for beginners)
-LLVM Tutorial
-Yahoo logo, animation in 462 bytes of C
-Perl 6 released
-Rich Domain Doesn't Mean Fat Objects
-Ruby 2.3.0 Released
-I created a Hacker News Alternative (one more focused on computer science and is under active development)
-Artificial Intelligence 101: How to Get Started
-Parrot - a new messenger written in Swift that works with Hangouts
-netbout - An efficient Java based chat framework
-You should make a Doom level, part 1: the basics
-Gamification implementation - Play where you used to work, a brief intro to gamification and its implementation as a micro-service
-git-refork: Easily sync forks with upstream.
-Automate to save mental energy, not time
-Freelancing with Python and Fiverr
-Python/redis - Text Classifier
-10 Most Popular Javascript Libraries started in 2015
-Press Release: F# Software Foundation Granted 501(c)(3) Nonprofit Status
-Melody's guide programming languages: she hates them all
-Three simple but useful tutorials on Swift. Check it out.
-Faker, random data generate for tests
-Like Bernie Sanders? Want to do a little volunteering for him? Put your Ruby on Rails skills to good use!
-Funny Commit Message in Kernel
-Comparing the Upgrade Process of Dart and TypeScript Apps to Angular 2 beta.0 · Anton Moiseev
-I created Photish, a simple multithreaded static photo portfolio generator
-Generic event emitter/dispatcher in Go
-Parsing Expressions by Recursive Descent
-Lux Tutorial #1: Simple TODO list using Vert.x
-How to get started with Open Source - HackerEarth
-It's Christmas in Denmark on the 24th, so I'm so sorry.. I don't know why I did this.
-Open letter to Mozilla: Bring back Persona
-Want to Write a Compiler? Just Read These Two Papers.
-Advanced programming languages
-A Brief Introduction to REST
-HANGMAN GAME in less than 80 lines of code using PYTHON for beginners
-Regular Expression Crossword Puzzle
-MAKING A SIMPLE GAME USING PYTHON for Beginners
-Programming + The Bible = this game
-Write .Net and Node.js code together using Edge.js
-Desktop application using Flask and QtWebkit
-Larry wall : Perl 6 release announcement
+/r/Aww 2015 Awards thread!
+My dog would not leave the fishtank all weekend. We couldn't even get her to eat...
+I think my mom has a new favorite child
+Corgi getting less attention than the Christmas presents...
+Wait a minute...
+My friends special kitten is helping take down decorations.
+Too big for the chair, too stubborn to move to the couch.
+Dog in Central Park refusing to move until the accordion player finished his song
+He started on the bed
+So close!
+Meet my mom's pup, Elvis. He's a 6-month old Pit-Basset mix, and is even sweeter than he looks.
+Last night I slept at my girlfriend's house. This morning I woke up to this.
+He got stuck between the screen and the sliding door. Silly Puppy
+I just like to smile, smiling's my favorite
+He has become a monster
+Maya's face when she can't go outside because of the storm
+She may not know lots of tricks, but she is the best passenger!
+This is my parents' cat, simply named Kitty. He is a majestic beast.
+Pups Playing in Snow
+We got a kitten a week ago. She's adopted our basset as her fur daddy
+This guy came crawling down the tree when the rain started
+This little guy stood in the middle of the road and stared until we opened the passenger door, at which point he came right up and hopped in. He was so happy to meet new people on a deserted country road.
+Elsa the cat waiting for a snowy winter
+My fiancé got me two kittens for Christmas. Here's one of them in her favorite hiding spot. Reddit, meet Luna!
+Kitten is trying to make a new friend...
+Came home last night to a strange cat on my porch. Tonight, she's back again. I think she's adopted us.
+When you have to watch the baby and shovel snow.
+Meet the newest member of our family.
+Cats do not abide by the laws of nature...
+They love cuddling together on the couch
+My old lady
+Finally got my bird who hates cameras to pose for a picture.
+Lussi's new toy unearthed a new level of derp.
+My girlies
+My geezer of a bearded dragon is really happy to lay down next to my laptop as I game.
+Sleepy fennec
+Meet Obi-Wan
+Jammy Says Happy AwwLidays Guys
+My little girl missed me while I was gone for Christmas.
+Meet Deadpool the itty-bitty kitty with a mouth.
+3 Month Old Baby Emme
+I was out of town for Christmas. I think he missed me.
+Adopted this guy for Christmas. His name is Colton :)
+He's my best friend.
+My friends cat gives hugs and then passes out on you face down
+Needed his own bed
+I need some hot chocolate and a snuggle!
+Stick 'em up
+We dog sat this guy for about a month and he would never leave his bed. Meet Kringle.
+Capybara unconcerned with porcupette's battle with an apple
+This guy is embarrassed that he ate and threw up another sock
+Just two little owls sitting in a tree, that is all.
+We were worried they wouldn't get along
+Secret husky meeting.
+My husband got me these guys for Christmas! Left to Right: 'Piderman &amp; Mr. Poopybutthole
+Kitty Caffeine Infusion Of The Day
+My friend's new puppy is sporting the Bat-Signal on his face.
+Meet Michael, my visually impaired friend
+This little guy has been living under my house. Those eyes.
+Had a visitor at work today(GD Nassco)
+This smile will make you happy...
+Why hello there.
+A cute cat in a park after eating
+Grandparents Husky Riba loves the Minnesota weather
+Best Christmas gift
+It's scientifically proven cats are 80% liquid; the rest is fur.
+Soon
+Rosie loves her Christmas present
+Someone fell asleep in a snowbank.
+Oscar and Bella enjoying snuggles on the heating blanket
+This stray kitty at my friends house melted my heart
+Nap time
+Cross post from r/pets. Our dogs waiting patiently while we feed our handicapped cat.
+She helps me pot new succulents sometimes.
+Just got brave enough for the car window
+My brother just sent me a picture of my cat, Java, sitting very majestically on the bookshelf
+Just a frog using a leaf as an umbrella.
+I wish I could get this comfortable.
+My dreamy cat :3
+My beautiful canine.
+This is Pippen he likes scritches in the morning
+Today was my puppy's first day at the beach
+My Baby brother loved his Christmas present!
+My puppy's first time in the snow.
+I think my rescue boy really enjoyed his first Christmas
+This little girl showed up at my back fence and she's an absolute sweetheart!
+My grandma's cat 'mokolosh', he is a norwegian forest cat.
+Posing for pictures
+Reddit, meet Asgard. He was a foster dog, and we are giving him his forever home!
+My dog takes petting very seriously.
+Ultra high-def kitteh
+My new kitten is pretty odd.
+One of the many strange ways he sleeps.
+"Hey, I love you."
+The kitchen floor is too slippery for her. She's got to prop herself in the corner or else she slides all over.
+Chewy seeing the snow for the first time
+A bit skeptical about the outfit
+Before and after Harley's first haircut
+We watch Animal Planet now.
+Winston's First Snow
+Our dogs after opening their Christmas presents
+/r/Aww 2015 Awards thread!
+My wife doesn't understand why the cat likes me better.
+This guy came crawling down the tree when the rain started
+We got a kitten a week ago. She's adopted our basset as her fur daddy
+My dog would not leave the fishtank all weekend. We couldn't even get her to eat...
+I think my mom has a new favorite child
+Wait a minute...
+Came home last night to a strange cat on my porch. Tonight, she's back again. I think she's adopted us.
+My first bath wasn't so bad... Or was it?
+Corgi getting less attention than the Christmas presents...
+Dog in Central Park refusing to move until the accordion player finished his song
+Cats do not abide by the laws of nature...
+Into the bushes!
+He started on the bed
+He got stuck between the screen and the sliding door. Silly Puppy
+This is my parents' cat, simply named Kitty. He is a majestic beast.
+Too big for the chair, too stubborn to move to the couch.
+Meet my mom's pup, Elvis. He's a 6-month old Pit-Basset mix, and is even sweeter than he looks.
+Got my wife a rescue puppy for christmas. She hasn't stopped smiling since.
+So close!
+Stick 'em up
+She may not know lots of tricks, but she is the best passenger!
+I just like to smile, smiling's my favorite
+Last night I slept at my girlfriend's house. This morning I woke up to this.
+He has become a monster
+Maya's face when she can't go outside because of the storm
+Came across this little guy in a cafe today
+Best Christmas gift
+Pups Playing in Snow
+This guy is embarrassed that he ate and threw up another sock
+I don't care if we are in combat or home....
+I need some hot chocolate and a snuggle!
+My fiancé got me two kittens for Christmas. Here's one of them in her favorite hiding spot. Reddit, meet Luna!
+My geezer of a bearded dragon is really happy to lay down next to my laptop as I game.
+Jammy Says Happy AwwLidays Guys
+My photogenic maine coon, Blue
+Elsa the cat waiting for a snowy winter
+I wonder who made that mess
+He's my best friend.
+Meet the newest member of our family.
+Tiva was an outside cat for most of her life. She is now 20 years old and became an inside cat.
+Got a new kitten a week ago, she's 50% fluff
+This little guy stood in the middle of the road and stared until we opened the passenger door, at which point he came right up and hopped in. He was so happy to meet new people on a deserted country road.
+3 Month Old Baby Emme
+We were worried they wouldn't get along
+When you and your cat are fighting.
+Visited a cat cafe, found love in a sleeping Buttercup.
+A year ago today, we brought home this lil dude
+My old lady
+Someone fell asleep in a snowbank.
+I think he likes his sweater
+Soon
+Needed his own bed
+When you have to watch the baby and shovel snow.
+Kitten is trying to make a new friend...
+Here i Come!
+This seal, you guys
+Enough attention for one christmas break. Passed out as soon as the family left.
+Finally got my bird who hates cameras to pose for a picture.
+Lussi's new toy unearthed a new level of derp.
+And a Happy New Year 🐼
+They love cuddling together on the couch
+A Yakut Foal
+Hi, I'm Anton. I'm special.
+He makes this face after every time we scold him for being naughty. We don't stay mad for long.
+Sleepy fennec
+He was pouting and wouldn't look at me because I put jingle bells on him for a picture.
+Mango was quite photogenic on our hike today
+Pele's puppy eyes
+First Snow for Kadiddle
+Little girl rides with father on airplane for first time
+Meet Obi-Wan
+The only time she doesn't cry. I think my new lab puppy likes my shelter dog.
+Nap time
+I m in love.
+Meet Deadpool the itty-bitty kitty with a mouth.
+My little girl missed me while I was gone for Christmas.
+Kitten and puppy true friend... Cuteness Overloaded
+i am cute and i am fluffy
+Lowercase Cat Or Uppercase Cat
+My best buddy Spot
+My girlies
+My little rescue guy Duncan!
+Even with a bowl full of water , this is where I find him licking the shower walls
+Adopted this guy for Christmas. His name is Colton :)
+8 week old puppy
+This smile will make you happy...
+This fawn and bobcat were found in an office together, cuddling under a desk after a forest fire
+Just a frog using a leaf as an umbrella.
+Elvira, Mistress of the Park
+My brother just sent me a picture of my cat, Java, sitting very majestically on the bookshelf
+Say hi to Bell
+I was out of town for Christmas. I think he missed me.
+She helps me pot new succulents sometimes.
+Brothers ❤️
+Every time I stopped petting, he would somehow move my hand back onto his head. So I did this for over an hour.
+My new kitten is pretty odd.
+My friends cat gives hugs and then passes out on you face down
+Oscar and Bella enjoying snuggles on the heating blanket
+The look my baby chinchilla gave me when I needed to get up to use the bathroom when she was trying to sleep on me.
+Capybara unconcerned with porcupette's battle with an apple
+/r/Aww 2015 Awards thread!
+The Sacramento Airport has "stress relief" dogs for people to pet who are just landing from their flight!
+Came across this little guy in a cafe today
+My husky, tired after playing with my sister's 2 dogs, during the long holiday weekend
+I dismembered you immediately but I love you
+Cat cuddling a cat, cuddling a cat
+Floofy kitten attacking mama floof!
+I don't always get a present. But when I do, I love it a lot.
+My wife doesn't understand why the cat likes me better.
+Here i Come!
+Found an old picture of my mom's dog, shortly after she had little puggies. Snuggled up with one of her babies and Mr. Whiskers, the cat. What a cute family!
+Dexter and his hunting trophy
+This guy came crawling down the tree when the rain started
+Tiva was an outside cat for most of her life. She is now 20 years old and became an inside cat.
+I wonder who made that mess
+Looked in my window heading to my car this morning. Now I don't ever want to work again.
+My photogenic maine coon, Blue
+We got a kitten a week ago. She's adopted our basset as her fur daddy
+Got my wife a rescue puppy for christmas. She hasn't stopped smiling since.
+My first bath wasn't so bad... Or was it?
+My handsome old man that HATES being cold.
+My friend's dog is prettier than most humans
+Baby giraffe
+My little Korra's first adventure in Austin
+Into the bushes!
+German Shepard with his hog
+The cutest floating head I've ever seen
+Candy makes the best faces.
+When you and your cat are fighting.
+Literally brought Ichabod back from the dead
+New house! He gave us the "all clear" to go in
+Savannah with the side eye
+Came home last night to a strange cat on my porch. Tonight, she's back again. I think she's adopted us.
+My dog wasn't really in the festive spirit this year
+I knew I should'a taken that left turn at Albuquerque!
+First bath and all trust she had in me was lost, but gained back again after a nice Milk Bone.
+Cats do not abide by the laws of nature...
+My dog would not leave the fishtank all weekend. We couldn't even get her to eat...
+secretly capture picture of pretty cat
+BACON STRIPS!!!!!!
+I tried to wake him up to open the window.
+Working the crowds
+Christmas isn't over until all the cookies are gone
+I think my mom has a new favorite child
+Wait a minute...
+Gus does not appreciate being woken up
+:p
+A year ago today, we brought home this lil dude
+Enough attention for one christmas break. Passed out as soon as the family left.
+My dog "Biscuit" watching her favorite show, "Swamp People".
+We couldn't find one of our foster kittens who had escaped the "designated kitten zone," and finally found her. I guess it's time to take down the Christmas decorations.
+HE'S SO FLUFFY
+Real Romance:
+We have a lodger this Christmas. A sleepy, hungry lodger.
+Dog in Central Park refusing to move until the accordion player finished his song
+Ace and Puma snuggling
+Corgi getting less attention than the Christmas presents...
+Resting after playing
+Kitty sniffing a flower. Enough said...
+He started on the bed
+Meet Mowgli: a 3 month old Gibbon baby!
+Got a new kitten a week ago, she's 50% fluff
+Went to brush my teeth this morning and found this
+She's my mamma not yours
+Bella the Pitbull mix
+He got stuck between the screen and the sliding door. Silly Puppy
+This is my parents' cat, simply named Kitty. He is a majestic beast.
+I Also Need 1 or may be More
+Reddit, meet the new addition to the family, Poppy!
+Stray dog joins adventure race team, follows them for a 430 mile long race. Gets adopted afterwards.
+Meet Luna
+We found a photogenic frog in our garden pond.
+Our 5 year old Jack Russell had a happy Christmas this year
+This seal, you guys
+Baby learning to goat
+Nothing like waking up next to your best friend.
+I think he likes his sweater
+She walked around like this for half an hour before it fell off...
+Too big for the chair, too stubborn to move to the couch.
+Stick 'em up
+Disturb me and there will be consequences
+My friend's Egyptian cat looking as fly as ever
+So crate training is going well...
+My son slept in his fort. I'm jelous.
+Meet my mom's pup, Elvis. He's a 6-month old Pit-Basset mix, and is even sweeter than he looks.
+The best pack in the world
+If I'm ever wondering where he is... It's here
+Meet sky... We rescued him today from a neglectful home
+My parents' dog likes to derp in her sleep
+Met this fellow today...Meet Ollie, our baby pig!
+Meowsic teacher - we're learning 'rests' today.
+They were terrified of their first trip to the vet
+Finally allowed to have a kitty! Went to the shelter came home with two... Oops lol
+Carbon.
+Bender
+Japan's Cat Island Tashirojima
+Precious moment of silence before they start fighting again
+My co-pilot for a day of travel
+8 months ago the first day I got my Great Dane
+So close!
+My sister caught my rabbit yawning

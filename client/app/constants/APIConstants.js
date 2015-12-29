@@ -7,4 +7,4 @@ const APIConstants = {
   },
 };
 
-export default APIConstants[process.env.NODE_ENV] || APIConstants['production'];
+export default APIConstants[process.env.NODE_ENV] || APIConstants.production;
