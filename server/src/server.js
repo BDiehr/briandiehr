@@ -27,7 +27,21 @@ app.use(require('koa-ratelimit')({
 }));
 
 /** Use static cache if available for request */
-app.use(staticCache(path.join(__dirname, 'static'), { dynamic: true }));
+app.use(staticCache(path.join(__dirname, 'static'), {
+  dynamic: true,
+  maxAge: 10,
+}));
+
+/** Response Caching */
+const cache = require('lru-cache')({ maxAge: 1000 * 60 * 30 });
+app.use(require('koa-cash')({
+  get: function * get(key) {
+    return cache.get(key);
+  },
+  set: function * set(key, value) {
+    cache.set(key, value);
+  },
+}));
 
 /** Custom middleware helpers */
 app.use(errorHandler());

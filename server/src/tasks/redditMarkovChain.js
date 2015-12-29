@@ -1,7 +1,5 @@
 import co from 'co';
-import path from 'path';
 import MarkovChain from 'markovchain';
-import fs from 'fs';
 import debug from 'debug';
 import getTopStoriesReddit from '../services/getTopStoriesReddit';
 
@@ -41,13 +39,13 @@ function redditMarkovChainClosure(subreddit) {
       };
     });
 
-    const weirdRedditPostsPath = path.resolve(__dirname, '..', `static/reddit_markov_chain/${lowerCaseSubreddit}`);
-    yield new Promise((resolve, reject) => {
-      fs.writeFile(weirdRedditPostsPath, JSON.stringify(weirdRedditPosts), (err, success) => {
-        if (err) reject(err);
-        else resolve(success);
-      });
-    });
+    // const weirdRedditPostsPath = path.resolve(__dirname, '..', `static/reddit_markov_chain/${lowerCaseSubreddit}`);
+    // yield new Promise((resolve, reject) => {
+    //   fs.writeFile(weirdRedditPostsPath, JSON.stringify(weirdRedditPosts), (err, success) => {
+    //     if (err) reject(err);
+    //     else resolve(success);
+    //   });
+    // });
 
     return weirdRedditPosts;
   });

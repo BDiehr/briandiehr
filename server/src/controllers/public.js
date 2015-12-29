@@ -7,6 +7,10 @@ function * status() {
 
 function * getSubredditInfo() {
   const ctx = this;
+
+  /** Check if we have the request cached */
+  if (yield* ctx.cashed()) return;
+
   const subreddit = ctx.params.subreddit;
   if (subreddit === undefined) {
     ctx.throw(400, 'subreddit must be specified');
