@@ -3,6 +3,7 @@ import React, {Component, PropTypes} from 'react';
 import { Grid, Input, Button, Col, Row } from 'react-bootstrap';
 import Posts from './posts';
 import PostStore from '../../../stores/PostStore';
+import PostActions from '../../../actions/PostActions';
 require('styles/home.scss');
 
 const propTypes = {
@@ -16,14 +17,24 @@ const propTypes = {
   history: PropTypes.any.isRequired,
 };
 
+const defaultProps = {
+  redditMarkovPostsLoadingStatus: 'LOADING',
+};
+
 @connectToStores
-class Home extends Component {
+class RedditMarkovChains extends Component {
 
   constructor(props, context) {
     super(props, context);
-    const subreddit = this.props.location.query.subreddit || 'all';
+    const subreddit = this.props.location.query.subreddit || 'aasdfsall';
     this.state = { subreddit };
-    PostStore.getRedditMarkovPosts(subreddit);
+    setTimeout(() => {
+      PostStore.getRedditMarkovPosts(subreddit);
+    }, 0);
+  }
+
+  componentWillUnmount() {
+    PostActions.clear();
   }
 
   static getStores() {
@@ -49,6 +60,7 @@ class Home extends Component {
   render() {
     const posts = this.props.redditMarkovPosts;
     const loadingStatus = this.props.redditMarkovPostsLoadingStatus;
+    console.log({loadingStatus});
     const { subreddit } = this.state;
 
     return (
@@ -118,5 +130,5 @@ class Home extends Component {
   }
 }
 
-Home.propTypes = propTypes;
-export default Home;
+RedditMarkovChains.propTypes = propTypes;
+export default RedditMarkovChains;

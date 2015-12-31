@@ -1,6 +1,10 @@
 import alt from '../util/alt';
 
 class PostActions {
+  clear() {
+    this.dispatch();
+  }
+
   getPostsSuccess(topPosts) {
     return topPosts;
   }

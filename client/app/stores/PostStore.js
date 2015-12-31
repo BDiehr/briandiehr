@@ -7,6 +7,7 @@ import PostActions from '../actions/PostActions';
 class PostStore {
   constructor() {
     this.bindListeners({
+      clear: PostActions.clear,
       /** HackerNews vs. Reddit */
       getPostsSuccess: PostActions.getPostsSuccess,
       getPostsFailed: PostActions.getPostsFailed,
@@ -25,6 +26,17 @@ class PostStore {
       redditMarkovPosts: [],
       redditMarkovPostsLoadingStatus: 'IDLE',
     };
+  }
+
+  clear() {
+    this.setState({
+      /** HackerNews vs. Reddit */
+      topPosts: [],
+      postsLoadingStatus: 'IDLE',
+      /** Reddit Markov Chain */
+      redditMarkovPosts: [],
+      redditMarkovPostsLoadingStatus: 'IDLE',
+    });
   }
 
   getPostsSuccess(topPosts) {
