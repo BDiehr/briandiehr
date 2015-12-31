@@ -2,8 +2,6 @@ import debug from 'debug';
 import errorHandler from './middleware/errorHandler';
 import addStatus from './middleware/addStatus';
 import config, { settings } from './config';
-import staticCache from 'koa-static-cache';
-import path from 'path';
 import redis from 'redis';
 
 if (settings.app.env === 'development') {
@@ -26,14 +24,9 @@ app.use(require('koa-ratelimit')({
   id: (context) => context.ip,
 }));
 
-/** Use static cache if available for request */
-app.use(staticCache(path.join(__dirname, 'static'), {
-  dynamic: true,
-  maxAge: 10,
-}));
 
 /** Response Caching */
-const cache = require('lru-cache')({ maxAge: 1000 * 60 * 30 });
+const cache = require('lru-cache')({ maxAge: 1000 * 60 * 60 * 2 });
 app.use(require('koa-cash')({
   get: function * get(key) {
     return cache.get(key);

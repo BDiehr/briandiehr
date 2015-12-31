@@ -34,14 +34,14 @@ export default class Histogram extends Component {
   render() {
     const { top, right, bottom, left, data, width, height } = this.props;
     const xScale = getXScale(data, width);
-    const histogramDataFn = d3.layout.histogram().bins(xScale.ticks(20));
+    const histogramDataFn = d3.layout.histogram().bins(xScale.ticks(40));
     const histogramData = histogramDataFn(data);
     const yScale = getYScale(histogramData, height);
 
     return (
       <div className="react-d3-histogram">
         <svg width={width + left + right} height={height + top + bottom}>
-          <g transform={"translate(" + left + "," + top + ")"}>
+          <g transform={`translate(${left}, ${top})`}>
             <XAxis height={height} scale={xScale} />
             {histogramData.map((d, i) => <Bar data={d} xScale={xScale} yScale={yScale} height={height} key={i} />)}
           </g>
@@ -85,7 +85,7 @@ class Tick extends Component {
 export class XAxis extends Component {
   static propTypes = {
     height: PropTypes.number.isRequired,
-    scale: PropTypes.func.isRequired
+    scale: PropTypes.func.isRequired,
   };
 
   render() {
@@ -119,7 +119,6 @@ export class Bar extends React.Component {
     return (
       <g className="react-d3-histogram__bar" transform={'translate(' + scaledX + ',' + scaledY + ')'}>
         <rect width={scaledDx - 1} height={height - scaledY} />
-        <text dy="0.75em" y="6" x={scaledDx / 2} textAnchor="middle">{data.y > 0 ? data.y : null}</text>
       </g>
     );
   }

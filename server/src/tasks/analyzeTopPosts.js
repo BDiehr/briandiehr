@@ -1,6 +1,4 @@
 import co from 'co';
-import path from 'path';
-import fs from 'fs';
 import url from 'url';
 import debug from 'debug';
 import getTopStoriesHackerNews from '../services/getTopStoriesHackerNews';
@@ -56,9 +54,13 @@ function analyzePostData(post) {
     url: post.url,
     title: post.hackerNewsPost.title,
     secondsDifference: Math.floor(Math.abs(post.hackerNewsPost.created - post.redditPost.created)),
+    analyzed_at: new Date().toISOString(),
   };
 }
 
+/**
+ * Task
+ */
 function scrapForTopPostsClosure(app) {
   return co.wrap(function * scrapForTopPosts() {
     try {
@@ -88,17 +90,7 @@ function scrapForTopPostsClosure(app) {
         const analyzedPosts = sharedPostsData.map(analyzePostData);
         /** Add to database */
         yield knex('topPosts').insert(analyzedPosts);
-        debug('dev')('Inserted new posts');
-        const topPosts = yield knex('topPosts').select('*');
-        debug('dev')('New Posts inserted in database');
-
-        fs.writeFile(path.resolve(__dirname, '..', 'static/hackernews_vs_reddit/post'), JSON.stringify({
-          topPosts,
-          status: 200,
-        }), (err) => {
-          if (err) debug('dev')({err});
-          else debug('dev')(`Analyzed ${analyzedPosts.length} new posts.`);
-        });
+        debug('dev')(`Analyzed ${analyzedPosts.length} new posts.`);
       } else {
         debug('dev')('No intersection URLs found.');
       }

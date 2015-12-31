@@ -7,8 +7,6 @@ function * status() {
 
 function * getSubredditInfo() {
   const ctx = this;
-
-  /** Check if we have the request cached */
   if (yield* ctx.cashed()) return;
 
   const subreddit = ctx.params.subreddit;
@@ -21,7 +19,17 @@ function * getSubredditInfo() {
   ctx.body = results;
 }
 
+function * getHackernewsVsRedditData() {
+  const ctx = this;
+  const knex = ctx.app.knex;
+  if (yield* ctx.cashed()) return;
+  const topPosts = yield knex('topPosts').select('*');
+  ctx.status = 200;
+  ctx.body = { topPosts };
+}
+
 export {
   status,
   getSubredditInfo,
+  getHackernewsVsRedditData,
 };

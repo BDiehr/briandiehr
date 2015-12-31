@@ -11,6 +11,7 @@ function cronJobConfig(app) {
     timezone: 'UTC',
   });
   task.start();
+  analyzeTopPosts(app).call();
 }
 
 export default cronJobConfig;
