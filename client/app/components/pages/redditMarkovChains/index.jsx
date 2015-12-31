@@ -26,7 +26,7 @@ class RedditMarkovChains extends Component {
 
   constructor(props, context) {
     super(props, context);
-    const subreddit = this.props.location.query.subreddit || 'aasdfsall';
+    const subreddit = this.props.location.query.subreddit || 'all';
     this.state = { subreddit };
     setTimeout(() => {
       PostStore.getRedditMarkovPosts(subreddit);
