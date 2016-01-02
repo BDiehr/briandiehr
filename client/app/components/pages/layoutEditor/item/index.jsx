@@ -62,11 +62,13 @@ class Item extends Component {
     const iteratorOfChildHoverStates = this.state.childHoverStates.values();
     let hasHoveredChild = false;
     for(let hoverState of iteratorOfChildHoverStates) {
+      console.log({hoverState});
       if (hoverState) {
         hasHoveredChild = true;
         break;
       }
     }
+    console.log({hoverState: this.state.hover, hasHoveredChild: hasHoveredChild});
     return this.state.hover && !hasHoveredChild;
   }
 
@@ -136,19 +138,22 @@ class Item extends Component {
 
     return (
       <div
-        style={style}
         onMouseEnter={this.onMouseEnterHandler}
         onMouseLeave={this.onMouseLeaveHandler}
-        className={classes}
-        >
+        className="layout-item-container">
         {this.shouldShowButtons() ? (
           <HoverButtons
             addChild={this.addChild}
             removeChild={this.removeChild}
             showDetails={this.selectItem}
             />
-          ) : null}
-        {this.renderChildren()}
+        ) : null}
+        <div
+          style={style}
+          className={classes}
+          >
+          {this.renderChildren()}
+        </div>
       </div>
     );
   }

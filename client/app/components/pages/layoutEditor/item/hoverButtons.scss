@@ -2,11 +2,10 @@ $button-spacing: 0.2em;
 
 .hover-buttons-container {
   position: relative;
-  display: flex;
-  flex-direction: row;
 }
 
 .hover-buttons {
+  margin: 0.2em;
   position: absolute;
   left: 0;
   top: 0;

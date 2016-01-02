@@ -1,9 +1,21 @@
+.layout-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
 .layout-item {
   background: #f4f4f4;
   border: #c9c9c9 3px solid;
   transition: border 0.4s, background 0.2s;
   display: flex;
-  margin: 1em;
+  padding: 1em;
+  margin: 1px;
 
   &:hover {
     border: #5f6370 3px solid;
