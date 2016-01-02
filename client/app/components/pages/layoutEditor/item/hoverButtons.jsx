@@ -6,6 +6,7 @@ export default class HoverButtons extends Component {
     addChild: PropTypes.func.isRequired,
     removeChild: PropTypes.func.isRequired,
     showDetails: PropTypes.func.isRequired,
+    isRoot: PropTypes.bool.isRequired,
   };
 
   render() {
@@ -14,7 +15,7 @@ export default class HoverButtons extends Component {
       <div className="hover-buttons-container">
         <div className="hover-buttons">
           <button className="hover-button" onClick={addChild}>Add</button>
-          <button className="hover-button" onClick={removeChild}>Remove</button>
+          {!this.props.isRoot ? <button className="hover-button" onClick={removeChild}>Remove</button> : null}
           <button className="hover-button" onClick={showDetails}>Select</button>
         </div>
       </div>

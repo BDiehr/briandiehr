@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 import LayoutActions from '../../../../actions/LayoutActions';
 import { Button, Input, Tabs, Tab } from 'react-bootstrap';
@@ -17,12 +16,12 @@ const StyleButton = ({display, actionProperty, actionValue, currentValue}) => {
       >
       {display}
     </Button>
-  )
+  );
 };
 
 export default class DetailPane extends Component {
   static propTypes = {
-    selectedId: PropTypes.number,
+    selectedId: PropTypes.string,
     selectedStyle: PropTypes.object,
   };
 
@@ -42,7 +41,7 @@ export default class DetailPane extends Component {
     };
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevProps) {
     if (prevProps.selectedId !== this.props.selectedId && this.refs.form != null) {
       this.setFormToSelected();
     }
@@ -90,7 +89,7 @@ export default class DetailPane extends Component {
       const stateUpdate = {};
       stateUpdate[ref] = this.refs[ref].getValue();
       this.setState(stateUpdate);
-    }
+    };
   };
 
   renderStyleOptions() {
@@ -230,27 +229,29 @@ export default class DetailPane extends Component {
               <Tabs defaultActiveKey={1} animation={false} >
                 <Tab eventKey={1} title="Flex Properties">
                   <div className="input-wrapper">
-                    <Input labelClassName="col-xs-4" wrapperClassName="col-xs-8" onChange={this.handleChange('flexGrow')} value={this.state.flexGrow} ref="flexGrow" type="decimal" label="Grow" />
-                    <Input labelClassName="col-xs-4" wrapperClassName="col-xs-8" onChange={this.handleChange('flexShrink')} value={this.state.flexShrink} ref="flexShrink" type="text" label="Shrink" />
-                    <Input labelClassName="col-xs-4" wrapperClassName="col-xs-8" onChange={this.handleChange('flexBasis')} value={this.state.flexBasis} ref="flexBasis" type="text" label="Basis" />
+                    <Input bsSize="small" labelClassName="col-xs-3" wrapperClassName="col-xs-8" onChange={this.handleChange('flexGrow')} value={this.state.flexGrow} ref="flexGrow" type="decimal" label="Grow" />
+                    <Input bsSize="small" labelClassName="col-xs-3" wrapperClassName="col-xs-8" onChange={this.handleChange('flexShrink')} value={this.state.flexShrink} ref="flexShrink" type="text" label="Shrink" />
+                    <Input bsSize="small" labelClassName="col-xs-3" wrapperClassName="col-xs-8" onChange={this.handleChange('flexBasis')} value={this.state.flexBasis} ref="flexBasis" type="text" label="Basis" />
                   </div>
                 </Tab>
                 <Tab eventKey={2} title="Sizing">
                   <div className="input-wrapper">
-                    <Input labelClassName="col-xs-4" wrapperClassName="col-xs-8" onChange={this.handleChange('width')} value={this.state.width} ref="width" type="text" label="Width" />
-                    <Input labelClassName="col-xs-4" wrapperClassName="col-xs-8" onChange={this.handleChange('minWidth')} value={this.state.minWidth} ref="minWidth" type="text" label="Min Width" />
-                    <Input labelClassName="col-xs-4" wrapperClassName="col-xs-8" onChange={this.handleChange('maxWidth')} value={this.state.maxWidth} ref="maxWidth" type="text" label="Max Width" />
-                    <Input labelClassName="col-xs-4" wrapperClassName="col-xs-8" onChange={this.handleChange('height')} value={this.state.height} ref="height" type="text" label="Height" />
-                    <Input labelClassName="col-xs-4" wrapperClassName="col-xs-8" onChange={this.handleChange('minHeight')} value={this.state.minHeight} ref="minHeight" type="text" label="Min Height" />
-                    <Input labelClassName="col-xs-4" wrapperClassName="col-xs-8" onChange={this.handleChange('maxHeight')} value={this.state.maxHeight} ref="maxHeight" type="text" label="Max Height" />
+                    <Input bsSize="small" labelClassName="col-xs-3" wrapperClassName="col-xs-8" onChange={this.handleChange('width')} value={this.state.width} ref="width" type="text" label="Width" />
+                    <Input bsSize="small" labelClassName="col-xs-3" wrapperClassName="col-xs-8" onChange={this.handleChange('minWidth')} value={this.state.minWidth} ref="minWidth" type="text" label="Min Width" />
+                    <Input bsSize="small" labelClassName="col-xs-3" wrapperClassName="col-xs-8" onChange={this.handleChange('maxWidth')} value={this.state.maxWidth} ref="maxWidth" type="text" label="Max Width" />
+                    <Input bsSize="small" labelClassName="col-xs-3" wrapperClassName="col-xs-8" onChange={this.handleChange('height')} value={this.state.height} ref="height" type="text" label="Height" />
+                    <Input bsSize="small" labelClassName="col-xs-3" wrapperClassName="col-xs-8" onChange={this.handleChange('minHeight')} value={this.state.minHeight} ref="minHeight" type="text" label="Min Height" />
+                    <Input bsSize="small" labelClassName="col-xs-3" wrapperClassName="col-xs-8" onChange={this.handleChange('maxHeight')} value={this.state.maxHeight} ref="maxHeight" type="text" label="Max Height" />
                   </div>
                 </Tab>
               </Tabs>
-              <Button className="pull-right" type="submit">Update Item</Button>
+              <div className="update-btn-container">
+                <Button className="update-btn" bsSize="small" type="submit">Update Item</Button>
+              </div>
             </form>
           </div>
         </div>
-      )
+      );
     } else {
       return <h2 className="text-center">Select an Item to edit.</h2>;
     }

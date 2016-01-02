@@ -24,14 +24,6 @@ class Item extends Component {
     super(props, context);
   }
 
-  static getStores() {
-    return [LayoutStore];
-  }
-
-  static getPropsFromStores() {
-    return LayoutStore.getState();
-  }
-
   state = {
     hover: false,
     childHoverStates: new Map(),
@@ -53,22 +45,37 @@ class Item extends Component {
     }
     /** Handle change in selected Style */
     if (this.isSelected() && !_.isEqual(this.state.style, this.props.selectedStyle)) {
+      // TODO: Change this implementation not to set in `componentDidUpdate`.
       this.setState({style: this.props.selectedStyle});
     }
+  }
+
+  onMouseEnterHandler = () => {
+    this.setState({ hover: true });
+  };
+
+  onMouseLeaveHandler = () => {
+    this.setState({ hover: false });
+  };
+
+  static getStores() {
+    return [LayoutStore];
+  }
+
+  static getPropsFromStores() {
+    return LayoutStore.getState();
   }
 
   shouldShowButtons() {
     /** Determine if we should show the utility buttons */
     const iteratorOfChildHoverStates = this.state.childHoverStates.values();
     let hasHoveredChild = false;
-    for(let hoverState of iteratorOfChildHoverStates) {
-      console.log({hoverState});
+    for (const hoverState of iteratorOfChildHoverStates) {
       if (hoverState) {
         hasHoveredChild = true;
         break;
       }
     }
-    console.log({hoverState: this.state.hover, hasHoveredChild: hasHoveredChild});
     return this.state.hover && !hasHoveredChild;
   }
 
@@ -80,14 +87,6 @@ class Item extends Component {
     const newMap = this.state.childHoverStates;
     newMap.set(id, state);
     this.setState({childHoverStates: newMap});
-  };
-
-  onMouseEnterHandler = () => {
-    this.setState({ hover: true });
-  };
-
-  onMouseLeaveHandler = () => {
-    this.setState({ hover: false });
   };
 
   selectItem = () => {
@@ -106,15 +105,15 @@ class Item extends Component {
         registerHoveredState={this.childHoverStateRegistration}
         />
     );
-    this.setState({childItems: childItems.concat(newItem) })
+    this.setState({ childItems: childItems.concat(newItem) });
   };
 
   deleteChild = (id) => {
     return () => {
       const newMap = this.state.childHoverStates;
       newMap.delete(id);
-      this.setState({childHoverStates: newMap});
-      this.setState({childItems: this.state.childItems.filter(item => item.props.id !== id)})
+      this.setState({ childHoverStates: newMap });
+      this.setState({ childItems: this.state.childItems.filter(item => item.props.id !== id) });
     };
   };
 
@@ -125,9 +124,16 @@ class Item extends Component {
 
   renderChildren() {
     const children = this.state.childItems || [];
-    return children.map((child, i) => React.cloneElement(child, {
-      number: i,
-    }));
+
+    if (this.props.id === 'root' && children.length === 0) {
+      return (
+        <div className="intro-text">Hover Over Me To See Options!</div>
+      );
+    } else {
+      return children.map((child, i) => React.cloneElement(child, {
+        number: i,
+      }));
+    }
   }
 
   render() {
@@ -146,6 +152,7 @@ class Item extends Component {
             addChild={this.addChild}
             removeChild={this.removeChild}
             showDetails={this.selectItem}
+            isRoot={this.props.id === 'root'}
             />
         ) : null}
         <div
