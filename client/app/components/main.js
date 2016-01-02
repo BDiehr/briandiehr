@@ -12,6 +12,7 @@ const routes = (
       <Route path="reddit-markov-chains" component={require('./pages/redditMarkovChains')} />
       <Route path="about" component={require('./pages/about/index')} />
       <Route path="code" component={require('./pages/code/index')} />
+      <Route path="layout-editor" component={require('./pages/layoutEditor')} />
       <Route path="*" component={require('./pages/notfound/index')} />
     </Route>
   </Router>

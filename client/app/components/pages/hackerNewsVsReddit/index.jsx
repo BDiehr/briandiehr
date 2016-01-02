@@ -1,4 +1,4 @@
-import connectToStores from '../../../../node_modules/alt/utils/connectToStores';
+import connectToStores from 'alt/utils/connectToStores';
 import _ from 'lodash';
 import uuid from 'node-uuid';
 import React, {Component, PropTypes} from 'react';

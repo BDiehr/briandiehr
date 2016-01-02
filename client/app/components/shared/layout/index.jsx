@@ -19,6 +19,7 @@ class Layout extends Component {
             </Navbar.Header>
             <Nav>
               <NavItem href="#/about">About</NavItem>
+              <NavItem href="#/layout-editor">Layout Editor</NavItem>
               <NavItem href="#/code">Code</NavItem>
             </Nav>
           </Navbar>
