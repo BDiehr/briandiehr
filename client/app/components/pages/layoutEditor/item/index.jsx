@@ -40,10 +40,6 @@ class Item extends Component {
     LayoutActions.addItem({ id: this.props.id, parentId: this.props.parentId });
   }
 
-  componentWillUnmount() {
-    LayoutActions.clear();
-  }
-
   componentDidUpdate(prevProps, prevState) {
     /** Handle registered hover map */
     if (prevState.hover !== this.state.hover) {

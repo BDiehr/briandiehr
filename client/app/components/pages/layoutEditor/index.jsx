@@ -1,5 +1,6 @@
 import connectToStores from 'alt/utils/connectToStores';
 import LayoutStore from '../../../stores/LayoutStore';
+import LayoutActions from '../../../actions/LayoutActions';
 import React, { Component, PropTypes } from 'react';
 import Item from './item/index';
 import Container from './container';
@@ -26,6 +27,10 @@ class LayoutEditor extends Component {
 
   static getPropsFromStores() {
     return LayoutStore.getState();
+  }
+
+  componentWillUnmount() {
+    LayoutActions.clear();
   }
 
   getCounter = () => {

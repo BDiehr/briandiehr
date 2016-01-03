@@ -73,6 +73,7 @@ class LayoutStore {
       const nodeId = node.model.id;
       updatedMap = updatedMap.delete(nodeId);
     });
+    console.log(this.state.HTMLTree);
     this.setState({
       styleMap: updatedMap,
       HTMLTree: this.state.HTMLTree,
