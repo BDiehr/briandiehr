@@ -13,6 +13,7 @@ function idEq(id) {
 class LayoutStore {
   constructor() {
     this.bindListeners({
+      clear: LayoutActions.clear,
       selectItem: LayoutActions.selectItem,
       updateItemProperty: LayoutActions.updateItemProperty,
       deleteItem: LayoutActions.deleteItem,
@@ -31,6 +32,21 @@ class LayoutStore {
         flexGrow: '1',
       },
     };
+  }
+
+  clear() {
+    this.setState({
+      HTMLTree: null,
+      styleMap: Immutable.Map(),
+      selectedId: 'root',
+      selectedStyle: {
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        alignItems: 'stretch',
+        flexWrap: 'nowrap',
+        flexGrow: '1',
+      },
+    });
   }
 
   selectItem({ id, style }) {

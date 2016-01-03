@@ -13,7 +13,7 @@ class Item extends Component {
     children: PropTypes.any,
     number: PropTypes.number,
     id: PropTypes.string.isRequired,
-    depth: PropTypes.string.isRequired,
+    depth: PropTypes.number.isRequired,
     parentId: PropTypes.string,
     selectedStyle: PropTypes.object,
     selectedId: PropTypes.string,
@@ -38,6 +38,10 @@ class Item extends Component {
 
   componentWillMount() {
     LayoutActions.addItem({ id: this.props.id, parentId: this.props.parentId });
+  }
+
+  componentWillUnmount() {
+    LayoutActions.clear();
   }
 
   componentDidUpdate(prevProps, prevState) {

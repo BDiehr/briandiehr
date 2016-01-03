@@ -1,6 +1,10 @@
 import alt from '../util/alt';
 
 class LayoutActions {
+  clear() {
+    this.dispatch();
+  }
+
   selectItem({ id, style }) {
     return { id, style };
   }
