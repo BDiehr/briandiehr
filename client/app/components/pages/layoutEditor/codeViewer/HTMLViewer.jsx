@@ -4,7 +4,7 @@ import 'highlight.js/styles/darkula.css';
 
 function tabs(n) {
   let tabs = '';
-  for(let i = 0; i < n; i++) {
+  for(let i = 0; i < n +1; i++) {
     tabs = tabs + '\t';
   }
   return tabs;
@@ -32,10 +32,10 @@ export default class HTMLViewer extends Component {
   getPrettyHTML() {
     const HTMLTree = this.props.HTMLTree;
     if (HTMLTree != null)  {
-      return HTMLWalk(HTMLTree);
+      return `<div class="container">\n${HTMLWalk(HTMLTree)}\n</div>`;
     }
 
-    return `<div class="item root" \>`;
+    return `<div class="container"><div class="item root" \></div>`;
   }
 
   render() {
