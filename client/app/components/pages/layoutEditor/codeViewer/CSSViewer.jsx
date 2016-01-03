@@ -68,6 +68,7 @@ export default class CodeViewer extends Component {
     return (
       <Highlight className="css highlight">
 { `   .item {
+      display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: stretch;
