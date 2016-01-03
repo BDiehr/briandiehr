@@ -1,7 +1,14 @@
 import alt from '../util/alt';
 import LayoutActions from '../actions/LayoutActions';
 import TreeModel from 'tree-model';
+import Immutable from 'immutable';
 const treeModel = new TreeModel();
+
+function idEq(id) {
+  return function (node) {
+    return node.model.id === id;
+  };
+}
 
 class LayoutStore {
   constructor() {
@@ -14,7 +21,7 @@ class LayoutStore {
 
     this.state = {
       HTMLTree: null,
-      styleMap: new Map(),
+      styleMap: Immutable.Map(),
       selectedId: 'root',
       selectedStyle: {
         flexDirection: 'row',
@@ -44,17 +51,24 @@ class LayoutStore {
   }
 
   deleteItem(id) {
-    const updatedMap = this.state.styleMap;
-    updatedMap.delete(id);
-    this.setState({ styleMap: updatedMap } );
+    let updatedMap = this.state.styleMap;
+    const removedSubtree = this.state.HTMLTree.first(idEq(id)).drop();
+    removedSubtree.walk(node => {
+      const nodeId = node.model.id;
+      updatedMap = updatedMap.delete(nodeId);
+    });
+    this.setState({
+      styleMap: updatedMap,
+      HTMLTree: this.state.HTMLTree,
+    } );
   }
 
   addItem({ id, parentId }) {
     if (this.state.HTMLTree != null) {
-      const rootNode = this.state.HTMLTree;
-      const childNode = treeModel.parse({ id: parentId });
-      rootNode.addChildAtIndex(childNode, parentId);
-      console.log({rootNode});
+      const parentNode = this.state.HTMLTree.first(idEq(parentId));
+      const childNode = treeModel.parse({ id });
+      parentNode.addChild(childNode);
+      this.setState({ HTMLTree: this.state.HTMLTree });
     } else {
       const root = treeModel.parse({ id });
       this.setState({ HTMLTree: root });

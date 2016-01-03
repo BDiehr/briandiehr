@@ -12,6 +12,7 @@
     "file": "^0.2.2",
     "highlight.js": "^8.9.1",
     "history": "^1.13.1",
+    "immutable": "^3.7.6",
     "jStat": "^1.5.2",
     "lodash": "^3.10.1",
     "node-uuid": "^1.4.7",
@@ -24,6 +25,7 @@
     "react-router": "^1.0.0",
     "react-tagsinput": "^3.0.3",
     "react-vendor-prefix": "0.0.1",
+    "shortid": "^2.2.4",
     "superagent": "^1.5.0",
     "superagent-promise": "^1.0.3",
     "tree-model": "^1.0.4"

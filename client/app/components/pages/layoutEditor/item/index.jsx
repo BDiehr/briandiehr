@@ -2,7 +2,6 @@ import connectToStores from 'alt/utils/connectToStores';
 import _ from 'lodash';
 import LayoutStore from '../../../../stores/LayoutStore';
 import React, { Component, PropTypes} from 'react';
-import uuid from 'node-uuid';
 import classNames from 'classnames';
 import LayoutActions from '../../../../actions/LayoutActions';
 import HoverButtons from './hoverButtons';
@@ -14,17 +13,15 @@ class Item extends Component {
     children: PropTypes.any,
     number: PropTypes.number,
     id: PropTypes.string.isRequired,
+    depth: PropTypes.string.isRequired,
     parentId: PropTypes.string,
     selectedStyle: PropTypes.object,
     selectedId: PropTypes.string,
     registerHoveredState: PropTypes.func,
     markToDelete: PropTypes.func,
+    getCounter: PropTypes.func.isRequired,
+    incrementCounter: PropTypes.func.isRequired,
   };
-
-  constructor(props, context) {
-    super(props, context);
-    LayoutActions.addItem({ id: props.id, parentId: props.parentId });
-  }
 
   state = {
     hover: false,
@@ -38,6 +35,10 @@ class Item extends Component {
       flexGrow: '1',
     },
   };
+
+  componentWillMount() {
+    LayoutActions.addItem({ id: this.props.id, parentId: this.props.parentId });
+  }
 
   componentDidUpdate(prevProps, prevState) {
     /** Handle registered hover map */
@@ -60,6 +61,12 @@ class Item extends Component {
     this.setState({ hover: false });
   };
 
+  onClick = () => {
+    if (this.isLeafNodeAndHovered()) {
+      this.selectItem();
+    }
+  };
+
   static getStores() {
     return [LayoutStore];
   }
@@ -68,7 +75,7 @@ class Item extends Component {
     return LayoutStore.getState();
   }
 
-  shouldShowButtons() {
+  isLeafNodeAndHovered() {
     /** Determine if we should show the utility buttons */
     const iteratorOfChildHoverStates = this.state.childHoverStates.values();
     let hasHoveredChild = false;
@@ -108,11 +115,13 @@ class Item extends Component {
   addChild = () => {
     this.selectItem();
     const childItems = this.state.childItems;
-    const itemId = uuid.v4();
+    const itemId = `item-depth-${this.props.depth + 1}-num-${this.props.getCounter()}`;
+    this.props.incrementCounter();
     const newItem = (
       <Item
         key={itemId}
         id={itemId}
+        depth={this.props.depth + 1}
         parentId={this.props.id}
         markToDelete={this.deleteChild(itemId)}
         registerHoveredState={this.childHoverStateRegistration}
@@ -131,7 +140,11 @@ class Item extends Component {
     if (this.props.id === 'root' && children.length === 0) {
       return <div className="intro-text">Hover Over Me To See Options!</div>;
     } else {
-      return children.map((child, i) => React.cloneElement(child, { number: i }));
+      return children.map((child, i) => React.cloneElement(child, {
+        number: i,
+        getCounter: this.props.getCounter,
+        incrementCounter: this.props.incrementCounter,
+      }));
     }
   }
 
@@ -143,10 +156,11 @@ class Item extends Component {
 
     return (
       <div
+        onClick={this.onClick}
         onMouseEnter={this.onMouseEnterHandler}
         onMouseLeave={this.onMouseLeaveHandler}
         className="layout-item-container">
-        {this.shouldShowButtons() ? (
+        {this.isLeafNodeAndHovered() ? (
           <HoverButtons
             addChild={this.addChild}
             removeChild={this.removeChild}

@@ -12,15 +12,12 @@ class LayoutEditor extends Component {
   static propTypes = {
     selectedId: PropTypes.string.isRequired,
     styleMap: PropTypes.any.isRequired,
+    HTMLTree: PropTypes.any.isRequired,
   };
 
   constructor(props, context) {
     super(props, context);
-    this.state = {
-      style: {
-        flexDirection: 'row',
-      },
-    };
+    this.state = { counter: 0 };
   }
 
   static getStores() {
@@ -30,6 +27,14 @@ class LayoutEditor extends Component {
   static getPropsFromStores() {
     return LayoutStore.getState();
   }
+
+  getCounter = () => {
+    return this.state.counter;
+  };
+
+  incrementCounter = () => {
+    this.setState({ counter: this.state.counter + 1 });
+  };
 
   render() {
     return (
@@ -45,10 +50,13 @@ class LayoutEditor extends Component {
             </ol>
           </div>
           <Container>
-            <Item number={1} id="root" />
+            <Item getCounter={this.getCounter} incrementCounter={this.incrementCounter} number={1} id="root" depth={0}/>
           </Container>
           <DetailPane {...this.props} />
-          <CodeViewer styleMap={this.props.styleMap} />
+          <CodeViewer
+            HTMLTree={this.props.HTMLTree}
+            styleMap={this.props.styleMap}
+            />
         </div>
       </div>
     );

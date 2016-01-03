@@ -1,28 +1,22 @@
 import React, { Component, PropTypes } from 'react';
-import Highlight from 'react-highlight';
+import CSSViewer from './CSSViewer';
+import HTMLViewer from './HTMLViewer';
 import './codeViewer.scss';
 
 export default class CodeViewer extends Component {
   static propTypes = {
     styleMap: PropTypes.any.isRequired,
+    HTMLTree: PropTypes.any.isRequired,
   };
 
   render() {
-    /** Determine if we should show the utility buttons */
-    const styles = [];
-    const styleIterator = this.props.styleMap.entries();
-    for (const [key, value] of styleIterator) {
-      const styleObj = {};
-      styleObj[key] = value;
-      styles.push(JSON.stringify(styleObj, null, 4));
-    }
-
+    const { HTMLTree, styleMap } = this.props;
     return (
       <div className="code-viewer">
-        <h3 className="text-center">Code Viewer</h3>
-        <Highlight>
-          {styles}
-        </Highlight>
+        <h2 className="text-center">CSS</h2>
+        <CSSViewer styleMap={styleMap} />
+        <h2 className="text-center">HTML</h2>
+        <HTMLViewer HTMLTree={HTMLTree} />
       </div>
     );
   }
