@@ -1,5 +1,19 @@
+.control-container-title {
+  height: 40px;
+  width: 100%;
+  background-color: #cecece;
+
+  &__text {
+    text-align: center;
+    color: whitesmoke;
+    vertical-align: middle;
+    font-size: 1.4em;
+    line-height: 1.8;
+    font-weight: bold;
+  }
+}
+
 .controls-container {
-  border-top: #cecece solid 30px;
   margin: 0;
   width: 100%;
   min-height: 500px;

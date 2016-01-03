@@ -260,6 +260,9 @@ export default class DetailPane extends Component {
   render() {
     return (
       <div className="detail-pane">
+        <div className="control-container-title">
+          <div className="control-container-title__text">Control Panel</div>
+        </div>
         {this.renderStyleOptions()}
       </div>
     );

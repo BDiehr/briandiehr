@@ -14,6 +14,7 @@ class Item extends Component {
     children: PropTypes.any,
     number: PropTypes.number,
     id: PropTypes.string.isRequired,
+    parentId: PropTypes.string,
     selectedStyle: PropTypes.object,
     selectedId: PropTypes.string,
     registerHoveredState: PropTypes.func,
@@ -22,6 +23,7 @@ class Item extends Component {
 
   constructor(props, context) {
     super(props, context);
+    LayoutActions.addItem({ id: props.id, parentId: props.parentId });
   }
 
   state = {
@@ -93,6 +95,16 @@ class Item extends Component {
     LayoutActions.selectItem({ id: this.props.id, style: this.state.style });
   };
 
+  deleteChild = (id) => {
+    return () => {
+      LayoutActions.deleteItem(id);
+      const newMap = this.state.childHoverStates;
+      newMap.delete(id);
+      this.setState({ childHoverStates: newMap });
+      this.setState({ childItems: this.state.childItems.filter(item => item.props.id !== id) });
+    };
+  };
+
   addChild = () => {
     this.selectItem();
     const childItems = this.state.childItems;
@@ -101,20 +113,12 @@ class Item extends Component {
       <Item
         key={itemId}
         id={itemId}
+        parentId={this.props.id}
         markToDelete={this.deleteChild(itemId)}
         registerHoveredState={this.childHoverStateRegistration}
         />
     );
     this.setState({ childItems: childItems.concat(newItem) });
-  };
-
-  deleteChild = (id) => {
-    return () => {
-      const newMap = this.state.childHoverStates;
-      newMap.delete(id);
-      this.setState({ childHoverStates: newMap });
-      this.setState({ childItems: this.state.childItems.filter(item => item.props.id !== id) });
-    };
   };
 
   removeChild = () => {
@@ -124,15 +128,10 @@ class Item extends Component {
 
   renderChildren() {
     const children = this.state.childItems || [];
-
     if (this.props.id === 'root' && children.length === 0) {
-      return (
-        <div className="intro-text">Hover Over Me To See Options!</div>
-      );
+      return <div className="intro-text">Hover Over Me To See Options!</div>;
     } else {
-      return children.map((child, i) => React.cloneElement(child, {
-        number: i,
-      }));
+      return children.map((child, i) => React.cloneElement(child, { number: i }));
     }
   }
 

@@ -4,12 +4,14 @@ import React, { Component, PropTypes } from 'react';
 import Item from './item/index';
 import Container from './container';
 import DetailPane from './detailPane';
+import CodeViewer from './codeViewer';
 import './layoutEditor.scss';
 
 @connectToStores
 class LayoutEditor extends Component {
   static propTypes = {
     selectedId: PropTypes.string.isRequired,
+    styleMap: PropTypes.any.isRequired,
   };
 
   constructor(props, context) {
@@ -46,6 +48,7 @@ class LayoutEditor extends Component {
             <Item number={1} id="root" />
           </Container>
           <DetailPane {...this.props} />
+          <CodeViewer styleMap={this.props.styleMap} />
         </div>
       </div>
     );

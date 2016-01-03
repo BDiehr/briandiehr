@@ -8,6 +8,14 @@ class LayoutActions {
   updateItemProperty({ property, value }) {
     return { property, value };
   }
+
+  deleteItem(id) {
+    return id;
+  }
+
+  addItem({ id, parentId }) {
+    return { id, parentId };
+  }
 }
 
 export default alt.createActions(LayoutActions);
