@@ -5,11 +5,15 @@ import React, { Component, PropTypes} from 'react';
 import classNames from 'classnames';
 import LayoutActions from '../../../../actions/LayoutActions';
 import HoverButtons from './hoverButtons';
+import InternalItem from './internalItem';
 import './item.scss';
 
 @connectToStores
 class Item extends Component {
   static propTypes = {
+    connectDropTarget: PropTypes.func.isRequired,
+    isOver: PropTypes.bool.isRequired,
+    canDrop: PropTypes.bool.isRequired,
     children: PropTypes.any,
     number: PropTypes.number,
     id: PropTypes.string.isRequired,
@@ -135,31 +139,17 @@ class Item extends Component {
     if (markToDelete) markToDelete();
   };
 
-  renderChildren() {
-    const children = this.state.childItems || [];
-    if (this.props.id === 'root' && children.length === 0) {
-      return <div className="intro-text">Hover Over Me To See Options!</div>;
-    } else {
-      return children.map((child, i) => React.cloneElement(child, {
-        number: i,
-        getCounter: this.props.getCounter,
-        incrementCounter: this.props.incrementCounter,
-      }));
-    }
-  }
-
   render() {
     const style = this.state.style;
-    const classes = classNames('layout-item', {
-      'layout-item--selected': this.isSelected(),
+    const containerClasses = classNames('layout-item-container', {
+      'layout-item-container--selected': this.isSelected(),
     });
 
     return (
       <div
-        onClick={this.onClick}
         onMouseEnter={this.onMouseEnterHandler}
         onMouseLeave={this.onMouseLeaveHandler}
-        className="layout-item-container">
+        className={containerClasses}>
         {this.isLeafNodeAndHovered() ? (
           <HoverButtons
             addChild={this.addChild}
@@ -168,12 +158,16 @@ class Item extends Component {
             isRoot={this.props.id === 'root'}
             />
         ) : null}
-        <div
+        <InternalItem
+          onClick={this.onClick}
+          addChild={this.addChild}
+          id={this.props.id}
           style={style}
-          className={classes}
+          getCounter={this.props.getCounter}
+          incrementCounter={this.props.incrementCounter}
           >
-          {this.renderChildren()}
-        </div>
+          {this.state.childItems}
+        </InternalItem>
       </div>
     );
   }

@@ -6,8 +6,12 @@ import Item from './item/index';
 import Container from './container';
 import DetailPane from './detailPane';
 import CodeViewer from './codeViewer';
+import DragMenu from './dragMenu';
 import './layoutEditor.scss';
 
+import { DragDropContext } from 'react-dnd';
+import HTML5Backend from 'react-dnd-html5-backend';
+@DragDropContext(HTML5Backend)
 @connectToStores
 class LayoutEditor extends Component {
   static propTypes = {
@@ -55,6 +59,7 @@ class LayoutEditor extends Component {
             </ol>
           </div>
           <Container>
+            <DragMenu />
             <Item getCounter={this.getCounter} incrementCounter={this.incrementCounter} number={1} id="root" depth={0}/>
           </Container>
           <DetailPane {...this.props} />

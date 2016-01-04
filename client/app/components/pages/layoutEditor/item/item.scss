@@ -11,26 +11,18 @@
 
 .layout-item-container {
   display: flex;
+  background: #f4f4f4;
   flex-direction: row;
+  border: #c9c9c9 3px solid;
   justify-content: flex-start;
   align-items: stretch;
+  transition: border 0.4s, background 0.2s;
   flex-wrap: nowrap;
   flex-grow: 1;
-  margin: 0;
-  padding: 0;
-}
-
-.layout-item {
-  background: #f4f4f4;
-  border: #c9c9c9 3px solid;
-  transition: border 0.4s, background 0.2s;
-  display: flex;
-  padding: 1em;
-  margin: 1px;
 
   &:hover {
+    cursor: default;
     border: #5f6370 3px solid;
-    cursor: pointer;
   }
 
   &--selected {
@@ -41,6 +33,18 @@
       background: #dcf3ed;
       border-style: dashed;
     }
+  }
+}
+
+.layout-item {
+  display: flex;
+  padding: 1em;
+  margin: 1px;
+  &--hover {
+    background: #dcf3ed;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 
